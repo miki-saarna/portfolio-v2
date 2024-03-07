@@ -1,5 +1,5 @@
 import './App.css';
-import Home from './home/index.js';
+import Home from './home/index';
 import { useState, useEffect } from 'react';
 import DarkModeToggle from './utils/darkMode';
 

@@ -1,5 +1,5 @@
-import HeroBanner from './hero.js';
-import Bio from './bio/index.tsx';
+import HeroBanner from './hero';
+import Bio from './bio/index';
 
 function Home() {
   return (
