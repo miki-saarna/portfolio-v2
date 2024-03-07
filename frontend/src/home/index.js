@@ -1,8 +1,12 @@
 import HeroBanner from './hero.js';
+import Bio from './bio.tsx';
 
 function Home() {
   return (
-    <HeroBanner />
+    <div>
+      <HeroBanner />
+      <Bio />
+    </div>
   );
 }
 
