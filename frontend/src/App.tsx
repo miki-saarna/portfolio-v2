@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className={`${darkMode && 'dark'} App`}>
-      <div className="flex justify-between items-center h-16 lg:h-40 p-4 bg-warmth border border-red-500">
+      <div className="flex justify-between items-center h-16 lg:h-40 p-4 bg-warmth">
         <div>Miki (logo)</div>
         <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode}  />
       </div>
