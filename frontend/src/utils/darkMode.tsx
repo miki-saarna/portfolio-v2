@@ -28,9 +28,11 @@ function DarkModeToggle({ darkMode, setDarkMode }: { darkMode: boolean, setDarkM
   }
 
   return (
-    darkMode
-      ? <SunIcon className="h-6 w-6 text-yellow-400" onClick={toggleDarkMode} />
-      : <MoonIcon className="h-6 w-6 text-indigo-400" onClick={toggleDarkMode} />
+    <button className="p-1 rounded-full bg-gray-50 focus-visible:outline-indigo-400 dark:bg-yellow-50 dark:focus-visible:outline-yellow-400">
+      {darkMode
+        ? <SunIcon className="h-6 w-6 text-yellow-400" onClick={toggleDarkMode} />
+        : <MoonIcon className="h-6 w-6 text-indigo-400" onClick={toggleDarkMode} />}
+    </button>
   )
 }
 
