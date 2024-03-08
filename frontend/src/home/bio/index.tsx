@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { JSX, useState } from 'react';
 import { IdentificationIcon } from '@heroicons/react/24/solid';
 import Tabs from './tabs/index';
 import Experiences from './tabs/experiences';
 import { Tab } from './tabs/types';
 
-export default function Bio() {
+export default function Bio(): JSX.Element {
 
   const [selectedTab, setSelectedTab] = useState<Tab>('experience');
 

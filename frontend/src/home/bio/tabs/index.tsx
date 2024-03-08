@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { JSX, useState } from 'react';
 import { Tab } from './types';
 
-export default function Tabs({ selectedTab, setSelectedTab }: { selectedTab: Tab, setSelectedTab: Function }) {
+export default function Tabs({ selectedTab, setSelectedTab }: { selectedTab: Tab, setSelectedTab: Function }): JSX.Element {
 
-  const [tabLocation, setTabLocation] = useState(0);
-  const [tabWidth, setTabWidth] = useState(0);
+  const [tabLocation, setTabLocation] = useState<number>(0);
+  const [tabWidth, setTabWidth] = useState<number>(0);
 
   function tabSelected(tabName: Tab): void {
     setSelectedTab(tabName);
@@ -30,9 +30,7 @@ export default function Tabs({ selectedTab, setSelectedTab }: { selectedTab: Tab
     }
   }
 
-  setTimeout(() => {
-    tabSelected(selectedTab);
-  })
+  setTimeout(() => tabSelected(selectedTab));
 
   return (
     <div>

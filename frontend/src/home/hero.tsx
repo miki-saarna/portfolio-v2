@@ -1,8 +1,8 @@
+import { JSX } from 'react';
 
-
-function HeroBanner() {
+export default function HeroBanner(): JSX.Element {
   return (
-    <div className="">
+    <div>
 
       {/* headline */}
       <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col lg:flex-row lg:justify-between items-start p-6 lg:px-12 mt-12 lg:mt-16 text-gray-600 dark:text-gray-300">
@@ -24,5 +24,3 @@ function HeroBanner() {
     </div>
   );
 }
-
-export default HeroBanner;

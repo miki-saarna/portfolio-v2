@@ -1,4 +1,6 @@
-export default function Experiences() {
+import { JSX } from 'react';
+
+export default function Experiences(): JSX.Element {
   return (
     <div className="flex flex-col space-y-6 divide-y mt-6 lg:mt-0 lg:ml-12">
       <div className="flex">

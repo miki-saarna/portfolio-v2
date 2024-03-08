@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
 
 function initDarkMode(): void {
@@ -21,10 +22,10 @@ function initDarkMode(): void {
   // localStorage.removeItem('theme')
 }
 
-function DarkModeToggle({ darkMode, setDarkMode }: { darkMode: boolean, setDarkMode: Function }) {
+function DarkModeToggle({ darkMode, setDarkMode }: { darkMode: boolean, setDarkMode: Function }): JSX.Element {
   initDarkMode();
 
-  function toggleDarkMode() {
+  function toggleDarkMode(): void {
     setDarkMode(!darkMode);
     localStorage.theme = localStorage.theme === 'dark' ? 'light' : 'dark';
   }
