@@ -7,7 +7,6 @@ import Footer from './footer/index';
 import MobileNavMenu from './nav-menu/mobile';
 
 function App(): JSX.Element {
-  const [mobileNavMenuOpen, setMobileNavMenuOpen] = useState<boolean>(false);
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
@@ -28,7 +27,7 @@ function App(): JSX.Element {
 
   return (
     <div className={`${darkMode && 'dark'} App`}>
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} setMobileNavMenuOpen={setMobileNavMenuOpen} />
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/bio" element={<div>bio page</div>} />
@@ -36,7 +35,6 @@ function App(): JSX.Element {
         <Route path="/contact" element={<div>contact page</div>} />
       </Routes>
       <Footer />
-      <MobileNavMenu mobileNavMenuOpen={mobileNavMenuOpen} setMobileNavMenuOpen={setMobileNavMenuOpen} />
     </div>
   );
 }
