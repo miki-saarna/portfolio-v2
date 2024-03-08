@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './home/index';
 import { useState, useEffect } from 'react';
-import DarkModeToggle from './utils/darkMode';
+import Header from './header/index';
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -24,10 +24,7 @@ function App() {
 
   return (
     <div className={`${darkMode && 'dark'} App`}>
-      <div className="flex justify-between items-center h-16 p-6">
-        <div>Miki (logo)</div>
-        <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode}  />
-      </div>
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Home />
     </div>
   );
