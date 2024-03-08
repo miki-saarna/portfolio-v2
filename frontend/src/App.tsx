@@ -7,6 +7,7 @@ import Footer from './footer/index';
 import Bio from './bio/index';
 import Projects from './projects/index';
 import Contact from './contact/index';
+import NotFound from './utils/notFound';
 
 function App(): JSX.Element {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -35,6 +36,7 @@ function App(): JSX.Element {
         <Route path="/bio" element={<Bio />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
