@@ -27,11 +27,11 @@ export default function NavMenu({ mobileNavMenuOpen, setMobileNavMenuOpen, darkM
               <XMarkIcon />
             </button>
           </div>
-          <div className="flex flex-col items-center space-y-6 mt-12 text-2xl font-bold">
-            <NavLink to="/" onClick={() => setMobileNavMenuOpen(false)} className="text-indigo-100 flex items-center" style={{ textShadow: "#E0E7FFB3 0 0 8px" }}>home</NavLink>
-            <NavLink to="/bio" onClick={() => setMobileNavMenuOpen(false)} className="text-indigo-100" style={{ textShadow: "#E0E7FFB3 0 0 8px" }}>bio</NavLink>
-            <NavLink to="/projects" onClick={() => setMobileNavMenuOpen(false)} className="text-indigo-100" style={{ textShadow: "#E0E7FFB3 0 0 8px" }}>projects</NavLink>
-            <NavLink to="/contact" onClick={() => setMobileNavMenuOpen(false)} className="text-indigo-100" style={{ textShadow: "#E0E7FFB3 0 0 8px" }}>contact</NavLink>
+          <div className="flex flex-col items-center space-y-6 mt-12 text-2xl font-bold text-indigo-100">
+            <NavLink to="/" onClick={() => setMobileNavMenuOpen(false)} style={{ textShadow: "#E0E7FFB3 0 0 8px" }}>home</NavLink>
+            <NavLink to="/bio" onClick={() => setMobileNavMenuOpen(false)} style={{ textShadow: "#E0E7FFB3 0 0 8px" }}>bio</NavLink>
+            <NavLink to="/projects" onClick={() => setMobileNavMenuOpen(false)} style={{ textShadow: "#E0E7FFB3 0 0 8px" }}>projects</NavLink>
+            <NavLink to="/contact" onClick={() => setMobileNavMenuOpen(false)} style={{ textShadow: "#E0E7FFB3 0 0 8px" }}>contact</NavLink>
           </div>
           <div className="flex justify-around mt-20">
             <div className="w-8 h-8 rounded-full bg-gray-200"></div>

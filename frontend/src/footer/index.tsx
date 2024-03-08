@@ -8,11 +8,11 @@ export default function Footer(): JSX.Element {
         <div className="lg:flex-[3] text-5xl lg:text-6xl font-bold">
           Let's build something exciting together.
         </div>
-        <div className="lg:flex-[1] flex flex-col items-end space-y-2 mt-6 lg:text-lg">
-          <NavLink to="/" className="text-indigo-400 flex items-center">home</NavLink>
-          <NavLink to="/bio" className="text-indigo-400">bio</NavLink>
-          <NavLink to="/projects" className="text-indigo-400">projects</NavLink>
-          <NavLink to="/contact" className="text-indigo-400">contact</NavLink>
+        <div className="lg:flex-[1] flex flex-col items-end space-y-2 mt-6 lg:text-lg text-indigo-400">
+          <NavLink to="/">home</NavLink>
+          <NavLink to="/bio">bio</NavLink>
+          <NavLink to="/projects">projects</NavLink>
+          <NavLink to="/contact">contact</NavLink>
         </div>
       </div>
       <div className="flex justify-around mx-auto mt-12 lg:mt-24 max-w-sm">
