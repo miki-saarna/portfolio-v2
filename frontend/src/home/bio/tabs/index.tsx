@@ -2,6 +2,7 @@ import { JSX, useState } from 'react';
 import { Tab } from './types';
 import Experiences from './experiences';
 import Skills from './skills';
+import Events from './events';
 
 export default function Tabs(): JSX.Element {
   const [selectedTab, setSelectedTab] = useState<Tab>('experience');
@@ -52,11 +53,12 @@ export default function Tabs(): JSX.Element {
       <div className="hidden lg:flex flex-col space-y-2 min-w-[10rem]">
         <button id="experienceTab" onClick={() => tabSelected('experience')} className={`p-2 rounded-md ${selectedTab === 'experience' && 'bg-gray-800 text-white'}`}>Experience</button>
         <button id="skillsTab" onClick={() => tabSelected('skills')} className={`p-2 rounded-md ${selectedTab === 'skills' && 'bg-gray-800 text-white'}`}>Skills</button>
-        <button id="eventsTab" onClick={() => tabSelected('events')} className={`p-2 rounded-md ${selectedTab === 'events' && 'bg-gray-800 text-white'}`}>Other</button>
+        <button id="eventsTab" onClick={() => tabSelected('events')} className={`p-2 rounded-md ${selectedTab === 'events' && 'bg-gray-800 text-white'}`}>Events</button>
       </div>
 
       {selectedTab === 'experience' && <Experiences />}
       {selectedTab === 'skills' && <Skills />}
+      {selectedTab === 'events' && <Events />}
     </div>
   )
 }
