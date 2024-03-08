@@ -1,6 +1,6 @@
 export default function Experiences() {
   return (
-    <div className="flex flex-col space-y-6 divide-y mt-6">
+    <div className="flex flex-col space-y-6 divide-y mt-6 lg:mt-0 lg:ml-12">
       <div className="flex">
         {/* img */}
         <div className="h-8 min-w-8 rounded-full bg-gray-200"></div>

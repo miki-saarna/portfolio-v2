@@ -35,18 +35,25 @@ export default function Tabs({ selectedTab, setSelectedTab }: { selectedTab: Tab
   })
 
   return (
-    <div className="relative flex justify-between mt-4 py-2 w-full text-lg font-bold">
-      <button id="experienceTab" onClick={() => tabSelected('experience')} className="px-2">Experience</button>
-      <button id="skillsTab" onClick={() => tabSelected('skills')} className="px-2">Skills</button>
-      <button id="eventsTab" onClick={() => tabSelected('events')} className="px-2">Other</button>
-      <div
-        style={{
-          transform: `translateX(${tabLocation}px)`,
-          width: `${tabWidth}px`
-        }}
-        className="absolute left-0 bottom-0 h-[2px] bg-gray-400 transition-all ease-out"
-      />
+    <div>
+      <div className="lg:hidden relative flex justify-between py-2 w-full text-lg font-bold">
+        <button id="experienceTab" onClick={() => tabSelected('experience')} className="px-2">Experience</button>
+        <button id="skillsTab" onClick={() => tabSelected('skills')} className="px-2">Skills</button>
+        <button id="eventsTab" onClick={() => tabSelected('events')} className="px-2">Other</button>
+        <div
+          style={{
+            transform: `translateX(${tabLocation}px)`,
+            width: `${tabWidth}px`
+          }}
+          className="absolute left-0 bottom-0 h-[2px] bg-gray-400 transition-all ease-out"
+        />
 
+      </div>
+      <div className="hidden lg:flex flex-col space-y-2 w-48">
+        <button id="experienceTab" onClick={() => tabSelected('experience')} className={`p-2 rounded-md ${selectedTab === 'experience' && 'bg-gray-800 text-white'}`}>Experience</button>
+        <button id="skillsTab" onClick={() => tabSelected('skills')} className={`p-2 rounded-md ${selectedTab === 'skills' && 'bg-gray-800 text-white'}`}>Skills</button>
+        <button id="eventsTab" onClick={() => tabSelected('events')} className={`p-2 rounded-md ${selectedTab === 'events' && 'bg-gray-800 text-white'}`}>Other</button>
+      </div>
     </div>
   )
 }
