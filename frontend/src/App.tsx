@@ -4,7 +4,9 @@ import './App.css';
 import Home from './home/index';
 import Header from './header/index';
 import Footer from './footer/index';
-import MobileNavMenu from './nav-menu/mobile';
+import Bio from './bio/index';
+import Projects from './projects/index';
+import Contact from './contact/index';
 
 function App(): JSX.Element {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -30,9 +32,9 @@ function App(): JSX.Element {
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/bio" element={<div>bio page</div>} />
-        <Route path="/projects" element={<div>projects page</div>} />
-        <Route path="/contact" element={<div>contact page</div>} />
+        <Route path="/bio" element={<Bio />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
