@@ -5,7 +5,7 @@ function HeroBanner() {
     <div className="">
 
       {/* headline */}
-      <div className="flex flex-col lg:flex-row items-start p-6 text-gray-600 dark:text-gray-300">
+      <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col lg:flex-row lg:justify-between items-start p-6 lg:px-12 text-gray-600 dark:text-gray-300">
         <div className="text-left text-4xl font-bold">
           <div>
             Hello,
@@ -14,7 +14,7 @@ function HeroBanner() {
             I'm Miki
           </div>
         </div>
-        <div className="w-4/5 mt-4 text-left text-sm">
+        <div className="w-4/5 lg:w-72 mt-4 lg:mt-0 text-left lg:text-center text-sm lg:text-base">
           I love to expand my knowledge of programming and enjoy exploring through building new projects.
         </div>
       </div>
