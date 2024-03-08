@@ -1,0 +1,22 @@
+.scrolling-disabled {
+  overflow: hidden;
+  height: 100%;
+}
+
+.page-overlay-enter {
+  opacity: 0;
+}
+
+.page-overlay-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.page-overlay-exit {
+  opacity: 1;
+}
+
+.page-overlay-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
