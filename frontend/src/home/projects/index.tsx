@@ -2,7 +2,7 @@ import { JSX } from 'react'
 
 export default function Projects(): JSX.Element {
   return (
-    <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col h-16 lg:h-24 p-6 lg:px-12">
+    <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col p-6 lg:px-12">
       <div className="text-left text-3xl font-bold">Projects</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
         <div className="sm:col-span-2 lg:row-span-2 min-h-[16rem] sm:min-h-[20rem] bg-gray-200 flex justify-center items-center rounded-md">Project 1</div>
