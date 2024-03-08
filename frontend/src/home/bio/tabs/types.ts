@@ -1,1 +1,1 @@
-export type Tab = 'experience' | 'skills' | 'events'
+export type Tab = 'experience' | 'education' | 'skills' | 'events'
