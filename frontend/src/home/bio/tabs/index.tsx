@@ -40,7 +40,7 @@ export default function Tabs(): JSX.Element {
       <div className="lg:hidden relative flex justify-between py-2 w-full text-lg font-bold">
         <button id="experienceTab" onClick={() => tabSelected('experience')} className="px-2">Experience</button>
         <button id="skillsTab" onClick={() => tabSelected('skills')} className="px-2">Skills</button>
-        <button id="eventsTab" onClick={() => tabSelected('events')} className="px-2">Other</button>
+        <button id="eventsTab" onClick={() => tabSelected('events')} className="px-2">Events</button>
         <div
           style={{
             transform: `translateX(${tabLocation}px)`,
