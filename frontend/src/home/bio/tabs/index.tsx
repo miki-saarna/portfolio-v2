@@ -1,8 +1,10 @@
 import { JSX, useState } from 'react';
 import { Tab } from './types';
+import Experiences from './experiences';
+import Skills from './skills';
 
-export default function Tabs({ selectedTab, setSelectedTab }: { selectedTab: Tab, setSelectedTab: Function }): JSX.Element {
-
+export default function Tabs(): JSX.Element {
+  const [selectedTab, setSelectedTab] = useState<Tab>('experience');
   const [tabLocation, setTabLocation] = useState<number>(0);
   const [tabWidth, setTabWidth] = useState<number>(0);
 
@@ -33,7 +35,7 @@ export default function Tabs({ selectedTab, setSelectedTab }: { selectedTab: Tab
   setTimeout(() => tabSelected(selectedTab));
 
   return (
-    <div>
+    <div className="flex flex-col lg:flex-row mt-6 lg:mt-12">
       <div className="lg:hidden relative flex justify-between py-2 w-full text-lg font-bold">
         <button id="experienceTab" onClick={() => tabSelected('experience')} className="px-2">Experience</button>
         <button id="skillsTab" onClick={() => tabSelected('skills')} className="px-2">Skills</button>
@@ -47,11 +49,14 @@ export default function Tabs({ selectedTab, setSelectedTab }: { selectedTab: Tab
         />
 
       </div>
-      <div className="hidden lg:flex flex-col space-y-2 w-48">
+      <div className="hidden lg:flex flex-col space-y-2 min-w-[10rem]">
         <button id="experienceTab" onClick={() => tabSelected('experience')} className={`p-2 rounded-md ${selectedTab === 'experience' && 'bg-gray-800 text-white'}`}>Experience</button>
         <button id="skillsTab" onClick={() => tabSelected('skills')} className={`p-2 rounded-md ${selectedTab === 'skills' && 'bg-gray-800 text-white'}`}>Skills</button>
         <button id="eventsTab" onClick={() => tabSelected('events')} className={`p-2 rounded-md ${selectedTab === 'events' && 'bg-gray-800 text-white'}`}>Other</button>
       </div>
+
+      {selectedTab === 'experience' && <Experiences />}
+      {selectedTab === 'skills' && <Skills />}
     </div>
   )
 }
