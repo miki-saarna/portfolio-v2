@@ -1,9 +1,11 @@
+import { JSX, useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './home/index';
-import { useState, useEffect } from 'react';
 import Header from './header/index';
+import Footer from './footer/index';
 
-function App() {
+function App(): JSX.Element {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
@@ -25,7 +27,12 @@ function App() {
   return (
     <div className={`${darkMode && 'dark'} App`}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/bio" element={<div>bio page</div>} />
+        <Route path="/projects" element={<div>projects page</div>} />
+        <Route path="/contact" element={<div>contact page</div>} />
+      </Routes>
     </div>
   );
 }
