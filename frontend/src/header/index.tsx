@@ -15,7 +15,7 @@ function App({ darkMode, setDarkMode }: { darkMode: boolean, setDarkMode: Functi
           <Bars3Icon />
         </button>
       </div>
-      <MobileNavMenu mobileNavMenuOpen={mobileNavMenuOpen} setMobileNavMenuOpen={setMobileNavMenuOpen} />
+      <MobileNavMenu mobileNavMenuOpen={mobileNavMenuOpen} setMobileNavMenuOpen={setMobileNavMenuOpen} darkMode={darkMode} setDarkMode={setDarkMode} />
     </>
   );
 }
