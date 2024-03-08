@@ -33,6 +33,7 @@ function App(): JSX.Element {
         <Route path="/projects" element={<div>projects page</div>} />
         <Route path="/contact" element={<div>contact page</div>} />
       </Routes>
+      <Footer />
     </div>
   );
 }
