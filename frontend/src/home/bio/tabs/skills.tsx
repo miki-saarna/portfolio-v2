@@ -3,12 +3,12 @@ import Tag from '../../../components/tag';
 
 export default function Skills(): JSX.Element {
 
-  function genCustomAnimationStyle(): { animationDuration: string } {
-    const duration = Math.max(Math.floor(Math.random() * 7000), 4000)
-    return {
-      animationDuration: duration + 'ms'
-    };
-  }
+  // function genCustomAnimationStyle(): { animationDuration: string } {
+  //   const duration = Math.max(Math.floor(Math.random() * 7000), 4000)
+  //   return {
+  //     animationDuration: duration + 'ms'
+  //   };
+  // }
 
   return (
     <div className="flex flex-col space-y-6 divide-y mt-6 lg:mt-0 lg:ml-12">
@@ -17,19 +17,20 @@ export default function Skills(): JSX.Element {
           Pro
         </div>
         <div className="flex flex-wrap gap-2 mt-2">
-          <Tag color="bg-blue-300" className="floating-tag" style={genCustomAnimationStyle()}>JavaScript</Tag>
-          <Tag color="bg-blue-300" className="floating-tag" style={genCustomAnimationStyle()}>TypeScript</Tag>
-          <Tag color="bg-blue-300" className="floating-tag" style={genCustomAnimationStyle()}>Node</Tag>
-          <Tag color="bg-blue-300" className="floating-tag" style={genCustomAnimationStyle()}>HTML</Tag>
-          <Tag color="bg-blue-300" className="floating-tag" style={genCustomAnimationStyle()}>CSS</Tag>
-          <Tag color="bg-green-300" className="floating-tag" style={genCustomAnimationStyle()}>React</Tag>
-          <Tag color="bg-green-300" className="floating-tag" style={genCustomAnimationStyle()}>Vue</Tag>
-          <Tag color="bg-green-300" className="floating-tag" style={genCustomAnimationStyle()}>Tailwind CSS</Tag>
-          <Tag color="bg-orange-300" className="floating-tag" style={genCustomAnimationStyle()}>Git</Tag>
-          <Tag color="bg-orange-300" className="floating-tag" style={genCustomAnimationStyle()}>GitHub Desktop</Tag>
-          <Tag color="bg-orange-300" className="floating-tag" style={genCustomAnimationStyle()}>VSCode</Tag>
-          <Tag color="bg-orange-300" className="floating-tag" style={genCustomAnimationStyle()}>Prompt engineering</Tag>
-          <Tag color="bg-orange-300" className="floating-tag" style={genCustomAnimationStyle()}>RESTful APIs</Tag>
+          {/* <Tag color="bg-blue-300" className="floating-tag" style={genCustomAnimationStyle()}>JavaScript</Tag> */}
+          <Tag color="bg-blue-300">JavaScript</Tag>
+          <Tag color="bg-blue-300">TypeScript</Tag>
+          <Tag color="bg-blue-300">Node</Tag>
+          <Tag color="bg-blue-300">HTML</Tag>
+          <Tag color="bg-blue-300">CSS</Tag>
+          <Tag color="bg-green-300">React</Tag>
+          <Tag color="bg-green-300">Vue</Tag>
+          <Tag color="bg-green-300">Tailwind CSS</Tag>
+          <Tag color="bg-orange-300">Git</Tag>
+          <Tag color="bg-orange-300">GitHub Desktop</Tag>
+          <Tag color="bg-orange-300">VSCode</Tag>
+          <Tag color="bg-orange-300">Prompt engineering</Tag>
+          <Tag color="bg-orange-300">RESTful APIs</Tag>
         </div>
       </div>
       <div className="pt-6">
@@ -41,6 +42,7 @@ export default function Skills(): JSX.Element {
           <Tag color="bg-blue-300">Python</Tag>
           <Tag color="bg-blue-300">SQL</Tag>
           <Tag color="bg-green-300">PostgreSQL</Tag>
+          <Tag color="bg-green-300">Flask</Tag>
           <Tag color="bg-green-300">Hardhat</Tag>
           <Tag color="bg-green-300">Foundry</Tag>
           <Tag color="bg-green-300">ElementUI</Tag>
@@ -56,10 +58,12 @@ export default function Skills(): JSX.Element {
         <div className="flex flex-wrap gap-2 mt-2">
           <Tag color="bg-blue-300">Go</Tag>
           <Tag color="bg-blue-300">Rust</Tag>
+          <Tag color="bg-blue-300">MongoDB</Tag>
           <Tag color="bg-green-300">Substrate</Tag>
           <Tag color="bg-green-300">Mocha</Tag>
           <Tag color="bg-green-300">Chai</Tag>
           <Tag color="bg-green-300">Cypress</Tag>
+          <Tag color="bg-green-300">Axios</Tag>
           <Tag color="bg-orange-300">AWS</Tag>
         </div>
       </div>
