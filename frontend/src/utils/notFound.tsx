@@ -12,9 +12,8 @@ export default function NotFound(): JSX.Element {
         }
         return res.json();
       })
-      .then(({data}) => {
-        console.log(data)
-        setNotFoundQuote(data)
+      .then((data) => {
+        setNotFoundQuote(data.quote)
       })
       .catch((err) => console.error("There was an issue: ", err));
   }, []);
