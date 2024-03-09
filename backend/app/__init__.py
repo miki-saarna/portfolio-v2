@@ -1,9 +1,8 @@
 from flask import Flask
 from flask_cors import CORS
+from . import utils
 
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/not-found")
-def notFound():
-  return { "data": "You cannot find yourself till you lose yourself."}
+app.register_blueprint(utils.bp)
