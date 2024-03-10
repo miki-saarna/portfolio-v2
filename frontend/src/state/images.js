@@ -12,6 +12,8 @@ export const ImageProvider = ({ children }) => {
   const [ethDenver, setEthDenver] = useState(null);
   const [codehawks, setCodehawks] = useState(null);
   const [vue, setVue] = useState(null);
+  const [restaurantReservation, setRestaurantReservation] = useState(null);
+  const [amazonSellingPartnerAPI, setAmazonSellingPartnerAPI] = useState(null);
 
   const imageSrcMap = {
     speedRunEth,
@@ -20,7 +22,9 @@ export const ImageProvider = ({ children }) => {
     thinkful,
     ethDenver,
     codehawks,
-    vue
+    vue,
+    restaurantReservation,
+    amazonSellingPartnerAPI
   }
 
   function setImageSrc(key, src) {
@@ -44,6 +48,12 @@ export const ImageProvider = ({ children }) => {
     }
     if (key === 'vue') {
       setVue(src)
+    }
+    if (key === 'restaurantReservation') {
+      setRestaurantReservation(src)
+    }
+    if (key === 'amazonSellingPartnerAPI') {
+      setAmazonSellingPartnerAPI(src)
     }
   };
 
