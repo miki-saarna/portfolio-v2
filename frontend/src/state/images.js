@@ -9,12 +9,18 @@ export const ImageProvider = ({ children }) => {
   const [corvee, setCorvee] = useState(null);
   const [simplyByPapo, setSimplyByPapo] = useState(null);
   const [thinkful, setThinkful] = useState(null);
+  const [ethDenver, setEthDenver] = useState(null);
+  const [codehawks, setCodehawks] = useState(null);
+  const [vue, setVue] = useState(null);
 
   const imageSrcMap = {
     speedRunEth,
     corvee,
     simplyByPapo,
-    thinkful
+    thinkful,
+    ethDenver,
+    codehawks,
+    vue
   }
 
   function setImageSrc(key, src) {
@@ -29,6 +35,15 @@ export const ImageProvider = ({ children }) => {
     }
     if (key === 'thinkful') {
       setThinkful(src)
+    }
+    if (key === 'ethDenver') {
+      setEthDenver(src)
+    }
+    if (key === 'codehawks') {
+      setCodehawks(src)
+    }
+    if (key === 'vue') {
+      setVue(src)
     }
   };
 
