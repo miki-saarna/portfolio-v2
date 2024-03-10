@@ -34,9 +34,15 @@ export default function NavMenu({ mobileNavMenuOpen, setMobileNavMenuOpen, darkM
             <NavLink to="/contact" onClick={() => setMobileNavMenuOpen(false)} style={{ textShadow: "#E0E7FFB3 0 0 8px" }}>contact</NavLink>
           </div>
           <div className="flex justify-around mt-20">
-            <div className="w-8 h-8 rounded-full bg-gray-200"></div>
-            <div className="w-8 h-8 rounded-full bg-gray-200"></div>
-            <div className="w-8 h-8 rounded-full bg-gray-200"></div>
+            <a href="https://github.com/miki-saarna" target="_blank" rel="noopener noreferrer">
+              <img src={`images/github-logo-light.svg`} alt="GitHub logo" className="w-8 h-8" />
+            </a>
+            <a href="https://www.linkedin.com/in/mikito-saarna" target="_blank" rel="noopener noreferrer">
+              <img src={`images/linkedin-logo-blue.svg`} alt="LinkedIn logo" className="w-8 h-8" />
+            </a>
+            <a href="https://twitter.com/MikitoSaarna" target="_blank" rel="noopener noreferrer">
+              <img src={`images/x-logo-light.svg`} alt="X (Twitter) logo" className="w-8 h-8" />
+            </a>
           </div>
         </div>
       </div>
