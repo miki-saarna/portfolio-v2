@@ -10,7 +10,7 @@ export default function Experiences(): JSX.Element {
   useEffect(() => {
     if (!imageSrcMap.speedRunEth) {
       const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/${'speed-run-eth-logo-tiny.png'}`;
-      GetImageFromS3(url, setImageSrc);
+      GetImageFromS3('speedRunEth', url, setImageSrc);
     }
   }, [])
 
@@ -18,7 +18,7 @@ export default function Experiences(): JSX.Element {
     <div className="flex flex-col space-y-6 divide-y mt-6 lg:mt-0 lg:ml-12">
       <div className="flex">
 
-        <div className="min-w-8 mr-6">        
+        <div className="min-w-8 mr-6">
           {imageSrcMap.speedRunEth
             ? <img src={imageSrcMap.speedRunEth} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />

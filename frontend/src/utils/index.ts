@@ -1,5 +1,5 @@
-export function GetImageFromS3(url: string, setImageSrc: Function): void {
-  fetch(url)
+export function GetImageFromS3(imageLookupName: string, requestUrl: string, setImageSrc: Function): void {
+  fetch(requestUrl)
     .then(async(res) => {
       if (!res.ok) {
         throw new Error("Error occured");
@@ -8,7 +8,7 @@ export function GetImageFromS3(url: string, setImageSrc: Function): void {
       return data;
     })
     .then((data) => {
-      setImageSrc('speedRunEth', data.url)
+      setImageSrc(imageLookupName, data.url)
     })
     .catch((err) => console.error("There was an issue: ", err));
 }
