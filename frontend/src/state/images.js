@@ -8,11 +8,13 @@ export const ImageProvider = ({ children }) => {
   const [speedRunEth, setSpeedRunEth] = useState(null);
   const [corvee, setCorvee] = useState(null);
   const [simplyByPapo, setSimplyByPapo] = useState(null);
+  const [thinkful, setThinkful] = useState(null);
 
   const imageSrcMap = {
     speedRunEth,
     corvee,
-    simplyByPapo
+    simplyByPapo,
+    thinkful
   }
 
   function setImageSrc(key, src) {
@@ -24,6 +26,9 @@ export const ImageProvider = ({ children }) => {
     }
     if (key === 'simplyByPapo') {
       setSimplyByPapo(src)
+    }
+    if (key === 'thinkful') {
+      setThinkful(src)
     }
   };
 

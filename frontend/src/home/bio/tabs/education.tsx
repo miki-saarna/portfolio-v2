@@ -12,6 +12,10 @@ export default function Experiences(): JSX.Element {
       const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/${'speed-run-eth-logo-tiny.png'}`;
       GetImageFromS3('speedRunEth', url, setImageSrc);
     }
+    if (!imageSrcMap.thinkful) {
+      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/${'thinkful-logo-tiny.png'}`;
+      GetImageFromS3('thinkful', url, setImageSrc);
+    }
   }, [])
 
   return (
@@ -38,10 +42,14 @@ export default function Experiences(): JSX.Element {
       </div>
       <div className="flex pt-6">
 
-        {/* img */}
-        <div className="h-8 min-w-8 rounded-full bg-gray-200"></div>
+        <div className="min-w-8 mr-6">
+          {imageSrcMap.thinkful
+            ? <img src={imageSrcMap.thinkful} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
+            : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
+          }
+        </div>
 
-        <div className="flex flex-col ml-6 text-left">
+        <div className="flex flex-col text-left">
           <div className="text-xl font-bold">Software Engineering Flex</div>
           <div className="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat sint aperiam, ipsum nulla molestiae neque cumque non hic voluptates</div>
           <div className="mt-2 text-base font-bold">Thinkful</div>
