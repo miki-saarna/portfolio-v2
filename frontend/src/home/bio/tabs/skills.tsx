@@ -49,6 +49,7 @@ export default function Skills(): JSX.Element {
           <Tag color="bg-green-300">Bootstrap</Tag>
           <Tag color="bg-green-300">Express</Tag>
           <Tag color="bg-green-300">Knex</Tag>
+          <Tag color="bg-orange-300">Figma</Tag>
         </div>
       </div>
       <div className="pt-6">
