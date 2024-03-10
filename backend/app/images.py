@@ -12,7 +12,7 @@ s3_client = boto3.client(
     region_name=const.REGION_NAME
 )
 
-@bp.route('/get-image-url/<bucket_name>/<image_key>')
+@bp.route('/get-image-url/<bucket_name>/<path:image_key>')
 def get_image_url(bucket_name: str, image_key: str):
     image_url = cache.get(f'image_url:{image_key}')
 
