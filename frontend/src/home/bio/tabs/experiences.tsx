@@ -8,11 +8,11 @@ export default function Experiences(): JSX.Element {
 
   useEffect(() => {
     if (!imageSrcMap.corvee) {
-      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/${'corvee-logo-tiny.png'}`;
+      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/logos/${'corvee-logo-tiny.png'}`;
       GetImageFromS3('corvee', url, setImageSrc);
     }
     if (!imageSrcMap.simplyByPapo) {
-      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/${'papo-logo-tiny.png'}`;
+      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/logos/${'papo-logo-tiny.png'}`;
       GetImageFromS3('simplyByPapo', url, setImageSrc);
     }
   }, [])
