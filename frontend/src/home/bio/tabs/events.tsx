@@ -30,7 +30,7 @@ export default function Events(): JSX.Element {
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
-        <div className="flex flex-col ml-6 text-left">
+        <div className="flex flex-col text-left">
           <div className="text-xl font-bold">ETHDenver 2024</div>
           <div className="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat sint aperiam, ipsum nulla molestiae neque cumque non hic voluptates</div>
           <div className="mt-2 text-base font-bold">Denver, CO</div>
@@ -44,7 +44,7 @@ export default function Events(): JSX.Element {
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
-        <div className="flex flex-col ml-6 text-left">
+        <div className="flex flex-col text-left">
           <div className="text-xl font-bold">Competitive security audit: Soulmates</div>
           <div className="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat sint aperiam, ipsum nulla molestiae neque cumque non hic voluptates</div>
           <div className="mt-2 text-base font-bold">Remote</div>
@@ -58,7 +58,7 @@ export default function Events(): JSX.Element {
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
-        <div className="flex flex-col ml-6 text-left">
+        <div className="flex flex-col text-left">
           <div className="text-xl font-bold">Vueconf US</div>
           <div className="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat sint aperiam, ipsum nulla molestiae neque cumque non hic voluptates</div>
           <div className="mt-2 text-base font-bold">Miami, FL</div>
