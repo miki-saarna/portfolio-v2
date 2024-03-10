@@ -4,12 +4,16 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ImageProvider } from './state/images';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      {/* unsure if ImageProvider should contain BrowserRouter */}
+      <ImageProvider>
+        <App />
+      </ImageProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

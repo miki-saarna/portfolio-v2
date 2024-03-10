@@ -1,36 +1,37 @@
-import { JSX, useState, useEffect } from 'react';
-// import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
+import { JSX, useEffect } from 'react';
 import Tag from '../../../components/tag';
+import { useImages } from '../../../state/images';
 
 export default function Experiences(): JSX.Element {
 
-  const [speedRunEthSrc, setSpeedRunEthSrc] = useState<any | null>(null);
+  const { imageSrcMap, setImageSrc } = useImages();
 
   useEffect(() => {
     const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/${'speed-run-eth-logo-tiny.png'}`
     setTimeout(() => {
 
     fetch(url)
-      .then((res) => {
+      .then(async(res) => {
         if (!res.ok) {
           throw new Error("Error occured");
         }
-        return res.json();
+        const data: any = res.json();
+        return data;
       })
       .then((data) => {
-        setSpeedRunEthSrc(data.url)
+        setImageSrc('speedRunEth', data.url)
       })
       .catch((err) => console.error("There was an issue: ", err));
     }, 300)
-  })
+  }, [])
 
   return (
     <div className="flex flex-col space-y-6 divide-y mt-6 lg:mt-0 lg:ml-12">
       <div className="flex">
 
-        <div className="min-w-8 mr-6">
-          {speedRunEthSrc
-            ? <img src={speedRunEthSrc} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
+        <div className="min-w-8 mr-6">        
+          {imageSrcMap.speedRunEth
+            ? <img src={imageSrcMap.speedRunEth} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
