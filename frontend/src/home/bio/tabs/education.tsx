@@ -1,28 +1,17 @@
 import { JSX, useEffect } from 'react';
 import Tag from '../../../components/tag';
 import { useImages } from '../../../state/images';
+import { GetImageFromS3 } from '../../../utils/index';
 
 export default function Experiences(): JSX.Element {
 
   const { imageSrcMap, setImageSrc } = useImages();
 
   useEffect(() => {
-    const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/${'speed-run-eth-logo-tiny.png'}`
-    setTimeout(() => {
-
-    fetch(url)
-      .then(async(res) => {
-        if (!res.ok) {
-          throw new Error("Error occured");
-        }
-        const data: any = res.json();
-        return data;
-      })
-      .then((data) => {
-        setImageSrc('speedRunEth', data.url)
-      })
-      .catch((err) => console.error("There was an issue: ", err));
-    }, 300)
+    if (!imageSrcMap.speedRunEth) {
+      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/${'speed-run-eth-logo-tiny.png'}`;
+      GetImageFromS3(url, setImageSrc);
+    }
   }, [])
 
   return (
