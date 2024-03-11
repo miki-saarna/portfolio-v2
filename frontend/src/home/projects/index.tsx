@@ -5,36 +5,14 @@ import './projectCard.css'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
 import Button from '../../components/button';
 import Tag from '../../components/tag';
-
-type SkillType = 'language' | 'framework' | 'tool'
-type TagColor = 'bg-blue-300' | 'bg-green-300' | 'bg-orange-300'
-
-type skillsList = {
-  skill: string,
-  type: SkillType
-}
+import {
+  restaurantReservationSkills,
+  votingDAppSkills,
+  sellingPartnerAPISkills,
+  getColorFromSkillType
+} from './projectCard'
 
 export default function Projects(): JSX.Element {
-
-  const restaurantReservationSkills: skillsList[] = [
-    { skill: 'React', type: 'framework' },
-    { skill: 'Express', type: 'framework' },
-    { skill: 'PostgreSQL', type: 'framework' },
-    { skill: 'Knex', type: 'framework' },
-    { skill: 'Jest', type: 'framework' },
-    { skill: 'Puppeteer', type: 'framework' },
-  ]
-
-  const votingDAppSkills: skillsList[] = [
-    { skill: 'Solidity', type: 'language' },
-    { skill: 'TypeScript', type: 'language' },
-    { skill: 'Foundry', type: 'framework' }
-  ]
-  const sellingPartnerAPISkills: skillsList[] = [
-    { skill: 'Python', type: 'language' },
-    { skill: 'Amazon Selling Partner API', type: 'framework' },
-    { skill: 'gspread API', type: 'framework' }
-  ]
 
   const { imageSrcMap, setImageSrc } = useImages();
 
@@ -48,16 +26,6 @@ export default function Projects(): JSX.Element {
       GetImageFromS3('amazonSellingPartnerAPI', url, setImageSrc);
     }
   }, [])
-
-  function getColorFromSkillType(skillType: SkillType): TagColor {
-    if (skillType === 'language') {
-      return 'bg-blue-300'
-    } else if (skillType === 'framework') {
-      return 'bg-green-300'
-    } else {
-      return 'bg-orange-300'
-    }
-  }
 
   return (
     <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col p-6 lg:px-12">
@@ -166,17 +134,7 @@ export default function Projects(): JSX.Element {
             </Button>
           </div>
         </div>
-
-        {/* <div className="bg-gray-200 min-h-[16rem] flex justify-center items-center rounded-md">Project 4</div> */}
-        {/* <div className="bg-gray-200 min-h-[16rem] flex justify-center items-center rounded-md">Project 5</div> */}
-        {/* <div className="hidden lg:flex bg-gray-200 min-h-[16rem] justify-center items-center rounded-md">Project 6</div> */}
       </div>
     </div>
-  // <div className="min-w-8 mr-6">
-  //   {imageSrcMap.speedRunEth
-  //     ? <img src={imageSrcMap.speedRunEth} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
-  //     : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
-  //   }
-  // </div>
   )
 }
