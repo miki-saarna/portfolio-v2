@@ -71,7 +71,10 @@ export default function Projects(): JSX.Element {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={imageSrcMap.restaurantReservation} alt="Speed Run Ethereum logo" className="rounded-md" />
+            {imageSrcMap.restaurantReservation
+              ? <img src={imageSrcMap.restaurantReservation} alt="Speed Run Ethereum logo" className="rounded-md" />
+              : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 text-gray-400 animate-pulse">Loading</div>
+            }
           </a>
           <div className="mt-4 text-xl font-bold">Restaurant reservation app</div>
           <div className="flex flex-wrap gap-2 mt-2 ">
