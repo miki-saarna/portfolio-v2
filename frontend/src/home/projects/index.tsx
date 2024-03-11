@@ -48,7 +48,7 @@ export default function Projects(): JSX.Element {
           <div className="flex flex-wrap gap-2 mt-2 ">
             {restaurantReservationSkills.map((skillMapping) => <Tag color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
           </div>
-          <div className="mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non similique nemo magnam, atque aliquam delectus, neque, odit eaque blanditiis ut repellat inventore consequatur? Itaque, doloribus.</div>
+          <div className="mt-2 text-sm">Comprehensive restaurant reservation app, featuring an intuitive reservation and seating system for staff, built on a robust CRUD architecture with Node.js, PostgreSQL, Express for the back-end, and React for the front-end.</div>
           <div className="mt-4 flex gap-2">
             <Button
               link="https://github.com/miki-saarna/restaurant-reservation-application"
@@ -89,7 +89,7 @@ export default function Projects(): JSX.Element {
           <div className="flex flex-wrap gap-2 mt-2 ">
             {votingDAppSkills.map((skillMapping) => <Tag color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
           </div>
-          <div className="mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non similique nemo magnam, atque aliquam delectus, neque, odit eaque blanditiis ut repellat inventore consequatur? Itaque, doloribus.</div>
+          <div className="mt-2 text-sm">Crafted a Solidity-based blockchain voting dApp, enabling secure and transparent voting processes through terminal commands, without a frontend GUI, leveraging Ethereum technology for decentralized decision-making.</div>
           <div className="mt-auto flex gap-2">
             <Button
               link="https://restaurant-reservation-application.vercel.app/dashboard"
@@ -116,11 +116,11 @@ export default function Projects(): JSX.Element {
               : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 text-gray-400 animate-pulse">Loading</div>
             }
           </a>
-          <div className="mt-4 text-xl font-bold">Restaurant reservation app</div>
+          <div className="mt-4 text-xl font-bold">Amazon Seller API</div>
           <div className="flex flex-wrap gap-2 mt-2 ">
             {sellingPartnerAPISkills.map((skillMapping) => <Tag color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
           </div>
-          <div className="mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non similique nemo magnam, atque aliquam delectus, neque, odit eaque blanditiis ut repellat inventore consequatur? Itaque, doloribus.</div>
+          <div className="mt-2 text-sm">Engineered a comprehensive backend repository for automating Amazon Seller operations using Python and various APIs (Amazon Selling Partner, Gmail, Google Drive), featuring systems for dynamic inventory management, automated commission reporting, and accurate product listing via Excel VBA and AI algorithms.</div>
           <div className="mt-auto flex gap-2">
             <Button
               link="https://restaurant-reservation-application.vercel.app/dashboard"
