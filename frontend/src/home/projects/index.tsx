@@ -106,7 +106,7 @@ export default function Projects(): JSX.Element {
         </div>
 
         {/* Project 2 */}
-        <div className="min-w-[fit-content] flex flex-col p-4 bg-white overflow-auto rounded-md shadow-test">
+        <div className="min-w-[fit-content] flex flex-col p-4 bg-white overflow-auto rounded-md project-card-shadow">
           <a
             href="https://restaurant-reservation-application.vercel.app/dashboard"
             target="_blank"
@@ -137,7 +137,7 @@ export default function Projects(): JSX.Element {
         </div>
 
         {/* Project 3 */}
-        <div className="min-w-[fit-content] flex flex-col p-4 bg-white overflow-auto rounded-md shadow-test">
+        <div className="min-w-[fit-content] flex flex-col p-4 bg-white overflow-auto rounded-md project-card-shadow">
           <a
             href="https://restaurant-reservation-application.vercel.app/dashboard"
             target="_blank"
