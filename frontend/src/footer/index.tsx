@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Footer(): JSX.Element {
   return (
-    <div className="max-w-2xl lg:max-w-6xl mx-auto p-6 lg:px-12 mt-24 pb-40">
+    <div className="max-w-2xl lg:max-w-6xl mx-auto pt-16 px-6 lg:px-12 pb-32">
       <div className="flex flex-col lg:flex-row justify-between lg:items-center">
         <div className="lg:flex-[3] text-5xl lg:text-6xl font-bold">
           Let's build something exciting together.
