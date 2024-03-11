@@ -35,7 +35,7 @@ export default function Experiences(): JSX.Element {
             <Tag color="bg-yellow-400" className="pulsating-tag">In progress</Tag>
           </div>
           
-          <div className="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat sint aperiam, ipsum nulla molestiae neque cumque non hic voluptates</div>
+          <div className="mt-1">Engaging in Speed Run Ethereum to master Solidity fundamentals, embracing an immersive educational journey into Ethereum development, and acquiring key skills for building and deploying smart contracts.</div>
           <div className="mt-2 text-base font-bold">Speed Run Ethereum</div>
           <div className="mt-1 text-sm">Dates - dates</div>
         </div>
@@ -51,7 +51,7 @@ export default function Experiences(): JSX.Element {
 
         <div className="flex flex-col text-left">
           <div className="text-xl font-bold">Software Engineering Flex</div>
-          <div className="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat sint aperiam, ipsum nulla molestiae neque cumque non hic voluptates</div>
+          <div className="mt-1">Completed a comprehensive software engineering certification prior to the advent of AI-assisted learning, mastering industry-standard technologies and best practices in JavaScript, SQL, HTML/CSS, and related frameworks, while emphasizing test-driven development and adaptive learning.</div>
           <div className="mt-2 text-base font-bold">Thinkful</div>
           <div className="mt-1 text-sm">Dates - dates</div>
         </div>
