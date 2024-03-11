@@ -65,7 +65,10 @@ export default function Skills(): JSX.Element {
           <Tag color="bg-green-300">Chai</Tag>
           <Tag color="bg-green-300">Cypress</Tag>
           <Tag color="bg-green-300">Axios</Tag>
+          <Tag color="bg-green-300">Jest</Tag>
+          <Tag color="bg-green-300">Puppeteer</Tag>
           <Tag color="bg-orange-300">AWS</Tag>
+          <Tag color="bg-orange-300">AWS S3</Tag>
         </div>
       </div>
       <div className="pt-6">
