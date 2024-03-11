@@ -28,7 +28,7 @@ export default function Projects(): JSX.Element {
   }, [])
 
   return (
-    <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col p-6 lg:px-12">
+    <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col py-16 px-6 lg:px-12">
       <div className="text-left text-3xl font-bold">Projects</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
         
