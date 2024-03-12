@@ -1,5 +1,4 @@
 import { JSX } from 'react';
-import { IdentificationIcon } from '@heroicons/react/24/solid';
 import Tabs from './tabs/index';
 
 export default function Bio(): JSX.Element {
