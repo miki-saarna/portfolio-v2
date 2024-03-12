@@ -14,7 +14,6 @@ export const ImageProvider = ({ children }) => {
   const [vue, setVue] = useState(null);
   const [restaurantReservation, setRestaurantReservation] = useState(null);
   const [amazonSellingPartnerAPI, setAmazonSellingPartnerAPI] = useState(null);
-  const [portrait, setPortrait] = useState(null);
 
   const imageSrcMap = {
     speedRunEth,
@@ -25,8 +24,7 @@ export const ImageProvider = ({ children }) => {
     codehawks,
     vue,
     restaurantReservation,
-    amazonSellingPartnerAPI,
-    portrait
+    amazonSellingPartnerAPI
   }
 
   function setImageSrc(key, src) {
@@ -56,9 +54,6 @@ export const ImageProvider = ({ children }) => {
     }
     if (key === 'amazonSellingPartnerAPI') {
       setAmazonSellingPartnerAPI(src)
-    }
-    if (key === 'portrait') {
-      setPortrait(src)
     }
   };
 

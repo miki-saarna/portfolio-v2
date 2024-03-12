@@ -1,18 +1,6 @@
-import { JSX, useEffect } from 'react';
-import { useImages } from '../../state/images';
-import { GetImageFromS3 } from '../../utils/index';
+import { JSX } from 'react';
 
 export default function HeroBanner(): JSX.Element {
-
-  const { imageSrcMap, setImageSrc } = useImages();
-
-  useEffect(() => {
-    if (!imageSrcMap.portrait) {
-      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/portrait/${'mikito-saarna-portrait.png'}`;
-      GetImageFromS3('portrait', url, setImageSrc);
-    }
-  }, [])
-
   return (
     <div>
 
@@ -33,10 +21,7 @@ export default function HeroBanner(): JSX.Element {
         </div>
 
         {/* 3: img */}
-        {imageSrcMap.portrait
-          ? <img src={imageSrcMap.portrait} alt="Speed Run Ethereum logo" className="mx-auto w-96" style={{ flex: 1 }} />
-          : <div className="flex justify-center items-center mx-auto h-[450px] w-96 bg-gray-200 text-gray-400 rounded-md animate-pulse">Portrait loading</div>
-        }
+        <img src={`images/mikito-saarna-portrait.png`} alt="Speed Run Ethereum logo" className="mx-auto w-96" style={{ flex: 1 }} />
 
         {/* 2 */}
         <div className="hidden lg:block text-center text-lg" style={{ flex: 1 }}>
