@@ -31,7 +31,7 @@ function DarkModeToggle({ darkMode, setDarkMode, className }: { darkMode: boolea
   }
 
   return (
-    <button onClick={toggleDarkMode} className={`relative border border-gray-400 p-1 w-12 h-6 rounded-full bg-gray-50 focus-visible:outline-indigo-400 dark:bg-gray-600 dark:focus-visible:outline-yellow-400 ${className}`}>
+    <button onClick={toggleDarkMode} className={`relative border border-gray-400 dark:border-[#F9FAFB] p-1 w-12 h-6 rounded-full bg-white focus-visible:outline-indigo-400 dark:bg-transparent dark:focus-visible:outline-yellow-400 ${className}`}>
       <div className="absolute top-1/2 left-0 dark:left-full dark:-translate-x-full -translate-y-1/2 transition-[left,transform] duration-300 ease-out">
           {darkMode
             ? <SunIcon className="h-5 w-5 text-yellow-400" />

@@ -18,12 +18,13 @@ function App(): JSX.Element {
 
   useEffect(() => {
     const currentMode = localStorage.theme;
+    document.documentElement.style.transition = 'background 200ms ease-in-out';
     if (currentMode === 'dark') {
-      document.documentElement.style.background = '#1F2937';
-      document.documentElement.style.transition = 'background 200ms ease-in-out';
+      document.documentElement.style.background = '#111827';
+      document.documentElement.style.color = '#F9FAFB';
     } else {
       document.documentElement.style.background = '#fff8f0';
-      document.documentElement.style.transition = 'background 200ms ease-in-out';
+      document.documentElement.style.color = '#292524';
     }
   }, [darkMode]);
 

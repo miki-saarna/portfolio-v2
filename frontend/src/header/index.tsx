@@ -11,7 +11,7 @@ function App({ darkMode, setDarkMode }: { darkMode: boolean, setDarkMode: Functi
     <>
       <div className="max-w-2xl lg:max-w-6xl mx-auto flex justify-between items-center h-16 lg:h-24 p-6 lg:px-12">
         <NavLink to="/" className="text-5xl lg:text-6xl font-bold">miki</NavLink>
-        <div className="hidden lg:flex space-x-12 justify-between w-full max-w-md text-xl font-bold text-indigo-400">
+        <div className="hidden lg:flex space-x-12 justify-between w-full max-w-md text-xl font-bold text-indigo-400 dark:text-indigo-300">
           <NavLink to="/">home</NavLink>
           <NavLink to="/bio">bio</NavLink>
           <NavLink to="/projects">projects</NavLink>
