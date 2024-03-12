@@ -37,7 +37,7 @@ export default function Experiences(): JSX.Element {
           
           <div className="mt-1 text-text-light">Engaging in Speed Run Ethereum to master Solidity fundamentals, embracing an immersive educational journey into Ethereum development, and acquiring key skills for building and deploying smart contracts.</div>
           <div className="mt-2 text-base font-bold">Speed Run Ethereum</div>
-          <div className="mt-1 text-sm text-text-light">Dates - dates</div>
+          <div className="mt-1 text-sm text-text-light">Jan 2024 - present</div>
         </div>
       </div>
       <div className="flex pt-6">
@@ -53,7 +53,7 @@ export default function Experiences(): JSX.Element {
           <div className="text-xl font-bold">Software Engineering Flex</div>
           <div className="mt-1 text-text-light">Completed a comprehensive software engineering certification prior to the advent of AI-assisted learning, mastering industry-standard technologies and best practices in JavaScript, SQL, HTML/CSS, and related frameworks, while emphasizing test-driven development and adaptive learning.</div>
           <div className="mt-2 text-base font-bold">Thinkful</div>
-          <div className="mt-1 text-sm text-text-light">Dates - dates</div>
+          <div className="mt-1 text-sm text-text-light">Jul 2021 - Jan 2022</div>
         </div>
       </div>
     </div>
