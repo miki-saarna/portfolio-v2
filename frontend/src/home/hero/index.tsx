@@ -17,7 +17,7 @@ export default function HeroBanner(): JSX.Element {
     <div>
 
       {/* headline */}
-      <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col lg:flex-row lg:justify-between items-start pt-16 px-6 lg:px-12 lg:mt-12 lg:mt-6 text-gray-600 dark:text-gray-300">
+      <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col lg:flex-row lg:justify-between items-start pt-16 px-6 lg:px-12 lg:mt-12 lg:mt-6 dark:text-gray-300">
         {/* 1 */}
         <div className="text-center lg:text-left text-4xl font-bold" style={{ flex: 1 }}>
           <div>
