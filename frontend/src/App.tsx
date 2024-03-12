@@ -22,7 +22,7 @@ function App(): JSX.Element {
       document.documentElement.style.background = '#1F2937';
       document.documentElement.style.transition = 'background 200ms ease-in-out';
     } else {
-      document.documentElement.style.background = '#fffef1';
+      document.documentElement.style.background = '#fff8f0';
       document.documentElement.style.transition = 'background 200ms ease-in-out';
     }
   }, [darkMode]);
