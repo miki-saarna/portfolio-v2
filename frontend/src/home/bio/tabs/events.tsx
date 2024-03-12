@@ -32,9 +32,9 @@ export default function Events(): JSX.Element {
         </div>
         <div className="flex flex-col text-left">
           <div className="text-xl font-bold">ETHDenver 2024</div>
-          <div className="mt-1">Participated in ETHDenver, immersing myself in the latest Ethereum and blockchain innovations, engaging with the community, and gaining insights into decentralized technology trends and developments.</div>
+          <div className="mt-1 text-text-light">Participated in ETHDenver, immersing myself in the latest Ethereum and blockchain innovations, engaging with the community, and gaining insights into decentralized technology trends and developments.</div>
           <div className="mt-2 text-base font-bold">Denver, CO</div>
-          <div className="mt-1 text-sm">Dates - dates</div>
+          <div className="mt-1 text-sm text-text-light">Dates - dates</div>
         </div>
       </div>
       <div className="flex pt-6">
@@ -46,9 +46,9 @@ export default function Events(): JSX.Element {
         </div>
         <div className="flex flex-col text-left">
           <div className="text-xl font-bold">Competitive security audit: Soulmates</div>
-          <div className="mt-1">Successfully completed a Solidity-based bounty program on Codehawks, applying ethical hacking skills to identify vulnerabilities in a codebase, leading to a rewarded security audit achievement.</div>
+          <div className="mt-1 text-text-light">Successfully completed a Solidity-based bounty program on Codehawks, applying ethical hacking skills to identify vulnerabilities in a codebase, leading to a rewarded security audit achievement.</div>
           <div className="mt-2 text-base font-bold">Remote</div>
-          <div className="mt-1 text-sm">Dates - dates</div>
+          <div className="mt-1 text-sm text-text-light">Dates - dates</div>
         </div>
       </div>
       <div className="flex pt-6">
@@ -60,9 +60,9 @@ export default function Events(): JSX.Element {
         </div>
         <div className="flex flex-col text-left">
           <div className="text-xl font-bold">Vueconf US</div>
-          <div className="mt-1">Attended VueConf to deepen my understanding of the Vue.js framework, complemented by a workshop day dedicated to mastering Cypress.io, enhancing my skills in end-to-end testing for Vue applications.</div>
+          <div className="mt-1 text-text-light">Attended VueConf to deepen my understanding of the Vue.js framework, complemented by a workshop day dedicated to mastering Cypress.io, enhancing my skills in end-to-end testing for Vue applications.</div>
           <div className="mt-2 text-base font-bold">Miami, FL</div>
-          <div className="mt-1 text-sm">Dates - dates</div>
+          <div className="mt-1 text-sm text-text-light">Dates - dates</div>
         </div>
       </div>
     </div>
