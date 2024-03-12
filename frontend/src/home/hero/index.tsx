@@ -32,11 +32,12 @@ export default function HeroBanner(): JSX.Element {
           </div>
         </div>
 
-      {/* 3: img */}
-      {imageSrcMap.portrait
-        ? <img src={imageSrcMap.portrait} alt="Speed Run Ethereum logo" className="mx-auto w-96" style={{ flex: 1 }} />
-        : <div className="flex justify-center items-center mx-auto h-[450px] w-96 bg-gray-200 text-gray-400 rounded-md animate-pulse">Portrait loading</div>
-      }
+        {/* 3: img */}
+        {imageSrcMap.portrait
+          ? <img src={imageSrcMap.portrait} alt="Speed Run Ethereum logo" className="mx-auto w-96" style={{ flex: 1 }} />
+          : <div className="flex justify-center items-center mx-auto h-[450px] w-96 bg-gray-200 text-gray-400 rounded-md animate-pulse">Portrait loading</div>
+        }
+
         {/* 2 */}
         <div className="hidden lg:block text-center text-lg" style={{ flex: 1 }}>
           I love to expand my knowledge of programming and enjoy exploring through building new projects.
