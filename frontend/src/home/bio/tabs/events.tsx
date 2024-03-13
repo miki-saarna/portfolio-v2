@@ -8,15 +8,15 @@ export default function Events(): JSX.Element {
 
   useEffect(() => {
     if (!imageSrcMap.ethDenver) {
-      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/logos/${'ethdenver-logo-tiny.png'}`;
+      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'ethdenver-logo-tiny.png'}`;
       GetImageFromS3('ethDenver', url, setImageSrc);
     }
     if (!imageSrcMap.codehawks) {
-      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/logos/${'codehawks-logo-tiny.png'}`;
+      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'codehawks-logo-tiny.png'}`;
       GetImageFromS3('codehawks', url, setImageSrc);
     }
     if (!imageSrcMap.vue) {
-      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/logos/${'vue-logo-tiny.png'}`;
+      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'vue-logo-tiny.png'}`;
       GetImageFromS3('vue', url, setImageSrc);
     }
   }, [])

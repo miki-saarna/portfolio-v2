@@ -9,11 +9,11 @@ export default function Experiences(): JSX.Element {
 
   useEffect(() => {
     if (!imageSrcMap.speedRunEth) {
-      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/logos/${'speed-run-eth-logo-tiny.png'}`;
+      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'speed-run-eth-logo-tiny.png'}`;
       GetImageFromS3('speedRunEth', url, setImageSrc);
     }
     if (!imageSrcMap.thinkful) {
-      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/logos/${'thinkful-logo-tiny.png'}`;
+      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'thinkful-logo-tiny.png'}`;
       GetImageFromS3('thinkful', url, setImageSrc);
     }
   }, [])
