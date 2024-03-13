@@ -1,11 +1,12 @@
-import { JSX, useState } from 'react';
+import { JSX } from 'react';
+// import { JSX, useState } from 'react';
 import DarkModeToggle from '../utils/darkMode';
-import { Bars3Icon } from '@heroicons/react/24/solid';
-import MobileNavMenu from '../nav-menu/mobile';
+// import { Bars3Icon } from '@heroicons/react/24/solid';
+// import MobileNavMenu from '../nav-menu/mobile';
 import { NavLink } from 'react-router-dom';
 
 function App({ darkMode, setDarkMode }: { darkMode: boolean, setDarkMode: Function }): JSX.Element {
-  const [mobileNavMenuOpen, setMobileNavMenuOpen] = useState<boolean>(false);
+  // const [mobileNavMenuOpen, setMobileNavMenuOpen] = useState<boolean>(false);
 
   return (
     <>
@@ -17,12 +18,13 @@ function App({ darkMode, setDarkMode }: { darkMode: boolean, setDarkMode: Functi
           <NavLink to="/projects">projects</NavLink>
           <NavLink to="/contact">contact</NavLink>
         </div>
-        <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} className="hidden lg:block" />
-        <button onClick={() => setMobileNavMenuOpen(true)} className="lg:hidden w-8 h-8">
+        <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+        {/* <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} className="hidden lg:block" /> */}
+        {/* <button onClick={() => setMobileNavMenuOpen(true)} className="lg:hidden w-8 h-8">
           <Bars3Icon />
-        </button>
+        </button> */}
       </div>
-      <MobileNavMenu mobileNavMenuOpen={mobileNavMenuOpen} setMobileNavMenuOpen={setMobileNavMenuOpen} darkMode={darkMode} setDarkMode={setDarkMode} />
+      {/* <MobileNavMenu mobileNavMenuOpen={mobileNavMenuOpen} setMobileNavMenuOpen={setMobileNavMenuOpen} darkMode={darkMode} setDarkMode={setDarkMode} /> */}
     </>
   );
 }
