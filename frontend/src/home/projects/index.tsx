@@ -61,7 +61,7 @@ export default function Projects(): JSX.Element {
               color="bg-gray-800 dark:bg-gray-700"
               className="flex items-center font-bold"
             >
-              <div>Live demo</div>
+              <div>View source</div>
               <ArrowTopRightOnSquareIcon className="ml-2 w-4 h-4" />
             </Button>
             <Button
@@ -71,7 +71,7 @@ export default function Projects(): JSX.Element {
               color="bg-gray-800 dark:bg-gray-700"
               className="flex items-center font-bold"
             >
-              <div>View source</div>
+              <div>Live demo</div>
               <ArrowTopRightOnSquareIcon className="ml-2 w-4 h-4" />
             </Button>
           </div>
@@ -96,7 +96,7 @@ export default function Projects(): JSX.Element {
           <div className="mt-2 text-sm text-text-light dark:text-gray-300">Crafted a Solidity-based blockchain voting dApp, enabling secure and transparent voting processes through terminal commands, without a frontend GUI, leveraging Ethereum technology for decentralized decision-making.</div>
           <div className="mt-auto flex gap-2">
             <Button
-              link="https://restaurant-reservation-application.vercel.app/dashboard"
+              link="https://github.com/miki-saarna/blockchain-voting-dapp"
               target="_blank"
               rel="noopener noreferrer"
               color="bg-gray-800 dark:bg-gray-700"
@@ -125,9 +125,9 @@ export default function Projects(): JSX.Element {
             {sellingPartnerAPISkills.map((skillMapping) => <Tag color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
           </div>
           <div className="mt-2 text-sm text-text-light dark:text-gray-300">Engineered a comprehensive backend repository for automating Amazon Seller operations using Python and various APIs (Amazon Selling Partner, Gmail, Google Drive), featuring systems for dynamic inventory management, automated commission reporting, and accurate product listing via Excel VBA and AI algorithms.</div>
-          <div className="mt-auto flex gap-2">
+          <div className="hidden mt-auto flex gap-2">
             <Button
-              link="https://restaurant-reservation-application.vercel.app/dashboard"
+              link=""
               target="_blank"
               rel="noopener noreferrer"
               color="bg-gray-800 dark:bg-gray-700"
