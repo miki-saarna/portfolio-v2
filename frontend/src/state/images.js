@@ -13,6 +13,7 @@ export const ImageProvider = ({ children }) => {
   const [codehawks, setCodehawks] = useState(null);
   const [vue, setVue] = useState(null);
   const [restaurantReservation, setRestaurantReservation] = useState(null);
+  const [votingDapp, setVotingDapp] = useState(null);
   const [amazonSellingPartnerAPI, setAmazonSellingPartnerAPI] = useState(null);
 
   const imageSrcMap = {
@@ -24,6 +25,7 @@ export const ImageProvider = ({ children }) => {
     codehawks,
     vue,
     restaurantReservation,
+    votingDapp,
     amazonSellingPartnerAPI
   }
 
@@ -51,6 +53,9 @@ export const ImageProvider = ({ children }) => {
     }
     if (key === 'restaurantReservation') {
       setRestaurantReservation(src)
+    }
+    if (key === 'votingDapp') {
+      setVotingDapp(src)
     }
     if (key === 'amazonSellingPartnerAPI') {
       setAmazonSellingPartnerAPI(src)

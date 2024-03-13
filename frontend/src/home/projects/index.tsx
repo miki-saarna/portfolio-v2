@@ -21,6 +21,10 @@ export default function Projects(): JSX.Element {
       const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/projects/${'restaurant-reservation-app.png'}`;
       GetImageFromS3('restaurantReservation', url, setImageSrc);
     }
+    if (!imageSrcMap.votingDapp) {
+      const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/projects/${'voting-dapp.png'}`;
+      GetImageFromS3('votingDapp', url, setImageSrc);
+    }
     if (!imageSrcMap.amazonSellingPartnerAPI) {
       const url = `http://127.0.0.1:5000/get-image-url/${'mikito-saarna-portfolio'}/projects/${'amazon-selling-partner-api.png'}`;
       GetImageFromS3('amazonSellingPartnerAPI', url, setImageSrc);
@@ -49,7 +53,7 @@ export default function Projects(): JSX.Element {
             {restaurantReservationSkills.map((skillMapping) => <Tag color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
           </div>
           <div className="mt-2 text-sm text-text-light dark:text-gray-300">Comprehensive restaurant reservation app, featuring an intuitive reservation and seating system for staff, built on a robust CRUD architecture with Node.js, PostgreSQL, Express for the back-end, and React for the front-end.</div>
-          <div className="mt-4 flex gap-2">
+          <div className="mt-auto flex gap-2">
             <Button
               link="https://github.com/miki-saarna/restaurant-reservation-application"
               target="_blank"
@@ -80,8 +84,8 @@ export default function Projects(): JSX.Element {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {imageSrcMap.restaurantReservation
-              ? <img src={imageSrcMap.restaurantReservation} alt="Speed Run Ethereum logo" className="rounded-md" />
+            {imageSrcMap.votingDapp
+              ? <img src={imageSrcMap.votingDapp} alt="Speed Run Ethereum logo" className="rounded-md" />
               : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 dark:bg-transparent text-gray-400 dark:text-gray-300 animate-pulse">Loading</div>
             }
           </a>
