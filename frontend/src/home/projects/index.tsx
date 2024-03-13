@@ -44,7 +44,7 @@ export default function Projects(): JSX.Element {
             rel="noopener noreferrer"
           >
             {imageSrcMap.restaurantReservation
-              ? <img src={imageSrcMap.restaurantReservation} alt="Speed Run Ethereum logo" className="rounded-md" />
+              ? <img src={imageSrcMap.restaurantReservation} alt="Restaurant reservation app dashboard" className="rounded-md" />
               : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 dark:bg-transparent text-gray-400 dark:text-gray-300 animate-pulse">Loading</div>
             }
           </a>
@@ -85,7 +85,7 @@ export default function Projects(): JSX.Element {
             rel="noopener noreferrer"
           >
             {imageSrcMap.votingDapp
-              ? <img src={imageSrcMap.votingDapp} alt="Speed Run Ethereum logo" className="rounded-md" />
+              ? <img src={imageSrcMap.votingDapp} alt="Blockchain voting dApp project image" className="rounded-md" />
               : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 dark:bg-transparent text-gray-400 dark:text-gray-300 animate-pulse">Loading</div>
             }
           </a>
@@ -116,7 +116,7 @@ export default function Projects(): JSX.Element {
             rel="noopener noreferrer"
           >
             {imageSrcMap.amazonSellingPartnerAPI
-              ? <img src={imageSrcMap.amazonSellingPartnerAPI} alt="Speed Run Ethereum logo" className="rounded-md" />
+              ? <img src={imageSrcMap.amazonSellingPartnerAPI} alt="Amazon Selling Partner API project image" className="rounded-md" />
               : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 dark:bg-transparent text-gray-400 dark:text-gray-300 animate-pulse">Loading</div>
             }
           </a>

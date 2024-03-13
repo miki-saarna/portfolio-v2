@@ -21,7 +21,7 @@ export default function HeroBanner(): JSX.Element {
         </div>
 
         {/* 3: img */}
-        <img src={`images/mikito-saarna-portrait.png`} alt="Speed Run Ethereum logo" className="mx-auto w-96" style={{ flex: 1 }} />
+        <img src={`images/mikito-saarna-portrait.png`} alt="Portrait of Mikito Saarna" className="mx-auto w-96" style={{ flex: 1 }} />
 
         {/* 2 */}
         <div className="hidden lg:block text-center text-lg" style={{ flex: 1 }}>

@@ -26,7 +26,7 @@ export default function Events(): JSX.Element {
       <div className="flex">
         <div className="min-w-8 mr-6">   
           {imageSrcMap.ethDenver
-            ? <img src={imageSrcMap.ethDenver} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
+            ? <img src={imageSrcMap.ethDenver} alt="ETHDenver logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
@@ -40,7 +40,7 @@ export default function Events(): JSX.Element {
       <div className="flex pt-6">
         <div className="min-w-8 mr-6">   
           {imageSrcMap.codehawks
-            ? <img src={imageSrcMap.codehawks} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
+            ? <img src={imageSrcMap.codehawks} alt="Codehawks logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
@@ -54,7 +54,7 @@ export default function Events(): JSX.Element {
       <div className="flex pt-6">
         <div className="min-w-8 mr-6">   
           {imageSrcMap.vue
-            ? <img src={imageSrcMap.vue} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
+            ? <img src={imageSrcMap.vue} alt="Vue logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>

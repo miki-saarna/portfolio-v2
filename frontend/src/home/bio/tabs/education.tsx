@@ -44,7 +44,7 @@ export default function Experiences(): JSX.Element {
 
         <div className="min-w-8 mr-6">
           {imageSrcMap.thinkful
-            ? <img src={imageSrcMap.thinkful} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
+            ? <img src={imageSrcMap.thinkful} alt="Thinkful logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>

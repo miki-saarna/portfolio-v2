@@ -22,7 +22,7 @@ export default function Experiences(): JSX.Element {
       <div className="flex">
         <div className="min-w-8 mr-6">   
           {imageSrcMap.corvee
-            ? <img src={imageSrcMap.corvee} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
+            ? <img src={imageSrcMap.corvee} alt="Corvee logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
@@ -36,7 +36,7 @@ export default function Experiences(): JSX.Element {
       <div className="flex pt-6">
         <div className="min-w-8 mr-6">
           {imageSrcMap.corvee
-            ? <img src={imageSrcMap.corvee} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
+            ? <img src={imageSrcMap.corvee} alt="Corvee logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
@@ -50,7 +50,7 @@ export default function Experiences(): JSX.Element {
       <div className="flex pt-6">
         <div className="min-w-8 mr-6">   
           {imageSrcMap.simplyByPapo
-            ? <img src={imageSrcMap.simplyByPapo} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
+            ? <img src={imageSrcMap.simplyByPapo} alt="Simply by Papo logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
