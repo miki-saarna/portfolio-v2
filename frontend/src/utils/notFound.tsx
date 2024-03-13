@@ -5,7 +5,7 @@ export default function NotFound(): JSX.Element {
 
   const [notFoundQuote, setNotFoundQuote] = useState<string>('');
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/not-found")
+    fetch(`${process.env.REACT_APP_API_URL}/not-found`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network res no good");
