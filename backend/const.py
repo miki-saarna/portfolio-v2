@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+FRONTEND_URL = os.environ["FRONTEND_URL"]
+
 AWS_ACCESS_KEY_ID = os.environ["AWS_ACCESS_KEY_ID"]
 AWS_SECRET_ACCESS_KEY = os.environ["AWS_SECRET_ACCESS_KEY"]
 REGION_NAME = os.environ["REGION_NAME"]
