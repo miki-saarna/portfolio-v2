@@ -3,7 +3,7 @@ from flask import Blueprint, jsonify
 import const as const
 from .config import cache
 
-bp = Blueprint("sign", __name__)
+bp = Blueprint("images", __name__)
 
 s3_client = boto3.client(
     's3',
