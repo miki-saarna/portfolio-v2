@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_cors import CORS
-from flask_caching import Cache
 from . import images, utils
 from .config import cache
 
