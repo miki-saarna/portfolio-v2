@@ -1,4 +1,4 @@
-import { JSX, useEffect } from 'react'
+import { JSX, useEffect, MouseEvent } from 'react'
 import { useImages } from '../../state/images';
 import { GetImageFromS3 } from '../../utils/index';
 import './projectCard.css'
@@ -52,8 +52,8 @@ export default function Projects(): JSX.Element {
           <div className="flex flex-wrap gap-2 mt-2 ">
             {restaurantReservationSkills.map((skillMapping) => <Tag color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
           </div>
-          <div className="mt-2 text-sm text-text-light dark:text-gray-300">Comprehensive restaurant reservation app, featuring an intuitive reservation and seating system for staff, built on a robust CRUD architecture with Node.js, PostgreSQL, Express for the back-end, and React for the front-end.</div>
-          <div className="mt-auto flex gap-2">
+          <div className="my-2 text-sm text-text-light dark:text-gray-300">Comprehensive restaurant reservation app, featuring an intuitive reservation and seating system for staff, built on a robust CRUD architecture with Node.js, PostgreSQL, Express for the back-end, and React for the front-end.</div>
+          <div className="mt-auto pt-2 flex gap-2">
             <Button
               link="https://github.com/miki-saarna/restaurant-reservation-application"
               target="_blank"
@@ -80,9 +80,11 @@ export default function Projects(): JSX.Element {
         {/* Project 2 */}
         <div className="min-w-[fit-content] flex flex-col p-4 bg-white dark:bg-transparent dark:border dark:border-[#F9FAFB] overflow-auto rounded-md project-card-shadow">
           <a
-            href="https://restaurant-reservation-application.vercel.app/dashboard"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={(event) => event.preventDefault()}
+            className="cursor-default"
           >
             {imageSrcMap.votingDapp
               ? <img src={imageSrcMap.votingDapp} alt="Blockchain voting dApp project image" className="rounded-md" />
@@ -94,7 +96,9 @@ export default function Projects(): JSX.Element {
             {votingDAppSkills.map((skillMapping) => <Tag color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
           </div>
           <div className="mt-2 text-sm text-text-light dark:text-gray-300">Crafted a Solidity-based blockchain voting dApp, enabling secure and transparent voting processes through terminal commands, without a frontend GUI, leveraging Ethereum technology for decentralized decision-making.</div>
-          <div className="mt-auto flex gap-2">
+          <div className="mt-2 text-sm font-bold">Gist ID for Remix:</div>
+          <div className="mb-2 text-sm">44065bd0829da53415ed96732502d3b2</div>
+          <div className="mt-2 pt-2 flex gap-2">
             <Button
               link="https://github.com/miki-saarna/blockchain-voting-dapp"
               target="_blank"
@@ -111,9 +115,11 @@ export default function Projects(): JSX.Element {
         {/* Project 3 */}
         <div className="min-w-[fit-content] flex flex-col p-4 bg-white dark:bg-transparent dark:border dark:border-[#F9FAFB] overflow-auto rounded-md project-card-shadow">
           <a
-            href="https://restaurant-reservation-application.vercel.app/dashboard"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={(event) => event.preventDefault()}
+            className="cursor-default"
           >
             {imageSrcMap.amazonSellingPartnerAPI
               ? <img src={imageSrcMap.amazonSellingPartnerAPI} alt="Amazon Selling Partner API project image" className="rounded-md" />
@@ -124,7 +130,7 @@ export default function Projects(): JSX.Element {
           <div className="flex flex-wrap gap-2 mt-2 ">
             {sellingPartnerAPISkills.map((skillMapping) => <Tag color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
           </div>
-          <div className="mt-2 text-sm text-text-light dark:text-gray-300">Engineered a comprehensive backend repository for automating Amazon Seller operations using Python and various APIs (Amazon Selling Partner, Gmail, Google Drive), featuring systems for dynamic inventory management, automated commission reporting, and accurate product listing via Excel VBA and AI algorithms.</div>
+          <div className="my-2 text-sm text-text-light dark:text-gray-300">Engineered a comprehensive backend repository for automating Amazon Seller operations using Python and various APIs (Amazon Selling Partner, Gmail, Google Drive), featuring systems for dynamic inventory management, automated commission reporting, and accurate product listing via Excel VBA and AI algorithms.</div>
           <div className="hidden mt-auto flex gap-2">
             <Button
               link=""
