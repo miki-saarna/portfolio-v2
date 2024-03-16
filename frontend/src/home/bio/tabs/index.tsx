@@ -59,10 +59,10 @@ export default function Tabs(): JSX.Element {
 
       </div>
       <div className="hidden lg:flex flex-col space-y-2 min-w-[10rem]">
-        <button id="experienceTab" onClick={() => tabSelected('experience')} className={`p-2 rounded-md ${selectedTab === 'experience' && 'bg-gray-800 dark:bg-gray-700 text-white'}`}>Experience</button>
-        <button id="educationTab" onClick={() => tabSelected('education')} className={`p-2 rounded-md ${selectedTab === 'education' && 'bg-gray-800 dark:bg-gray-700 text-white'}`}>Education</button>
-        <button id="skillsTab" onClick={() => tabSelected('skills')} className={`p-2 rounded-md ${selectedTab === 'skills' && 'bg-gray-800 dark:bg-gray-700 text-white'}`}>Skills</button>
-        <button id="eventsTab" onClick={() => tabSelected('events')} className={`p-2 rounded-md ${selectedTab === 'events' && 'bg-gray-800 dark:bg-gray-700 text-white'}`}>Events</button>
+        <button id="experienceTab" onClick={() => tabSelected('experience')} className={`p-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-800 focus-visible:ring-offset-1 dark:focus-visible:ring-gray-700 dark:ring-offset-[#111827] ${selectedTab === 'experience' && 'bg-gray-800 dark:bg-gray-700 text-white'}`}>Experience</button>
+        <button id="educationTab" onClick={() => tabSelected('education')} className={`p-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-800 focus-visible:ring-offset-1 dark:focus-visible:ring-gray-700 dark:ring-offset-[#111827] ${selectedTab === 'education' && 'bg-gray-800 dark:bg-gray-700 text-white'}`}>Education</button>
+        <button id="skillsTab" onClick={() => tabSelected('skills')} className={`p-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-800 focus-visible:ring-offset-1 dark:focus-visible:ring-gray-700 dark:ring-offset-[#111827] ${selectedTab === 'skills' && 'bg-gray-800 dark:bg-gray-700 text-white'}`}>Skills</button>
+        <button id="eventsTab" onClick={() => tabSelected('events')} className={`p-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-800 focus-visible:ring-offset-1 dark:focus-visible:ring-gray-700 dark:ring-offset-[#111827] ${selectedTab === 'events' && 'bg-gray-800 dark:bg-gray-700 text-white'}`}>Events</button>
       </div>
 
       {selectedTab === 'experience' && <Experiences />}
