@@ -35,8 +35,51 @@ export default function Projects(): JSX.Element {
     <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col py-16 px-6 lg:px-12">
       <div className="text-left text-3xl font-bold">Projects</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
-        
+
         {/* Project 1 */}
+        <div className="min-w-[fit-content] flex flex-col p-4 bg-white dark:bg-transparent dark:border dark:border-[#F9FAFB] overflow-auto rounded-md project-card-shadow">
+          <a
+            href="https://blockchain-voting-dapp-it4d91zm2-miki-saarna.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {imageSrcMap.votingDapp
+              ? <img src={imageSrcMap.votingDapp} alt="Blockchain voting dApp dashboard" className="rounded-md" />
+              : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 dark:bg-transparent text-gray-400 dark:text-gray-300 animate-pulse">Loading</div>
+            }
+          </a>
+          <div className="mt-4 text-xl font-bold">Blockchain Voting dApp</div>
+          <div className="flex flex-wrap gap-2 mt-2 ">
+            {votingDAppSkills.map((skillMapping) => <Tag color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
+          </div>
+          <div className="mt-2 text-sm text-text-light dark:text-gray-300">Crafted a Solidity-based blockchain voting dApp, enabling secure and transparent voting processes through terminal commands, without a frontend GUI, leveraging Ethereum technology for decentralized decision-making.</div>
+          <div className="mt-2 text-sm font-bold">Gist ID for Remix:</div>
+          <div className="mb-2 text-sm">44065bd0829da53415ed96732502d3b2</div>
+          <div className="mt-2 pt-2 flex gap-2">
+            <Button
+              link="https://github.com/miki-saarna/blockchain-voting-dapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="bg-gray-800 dark:bg-gray-700"
+              className="flex items-center font-bold"
+            >
+              <div>View source</div>
+              <ArrowTopRightOnSquareIcon className="ml-2 w-4 h-4" />
+            </Button>
+            <Button
+              link="https://blockchain-voting-dapp-it4d91zm2-miki-saarna.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="bg-gray-800 dark:bg-gray-700"
+              className="flex items-center font-bold"
+            >
+              <div>Live demo</div>
+              <ArrowTopRightOnSquareIcon className="ml-2 w-4 h-4" />
+            </Button>
+          </div>
+        </div>
+        
+        {/* Project 2 */}
         <div className="min-w-[fit-content] flex flex-col p-4 bg-white dark:bg-transparent dark:border dark:border-[#F9FAFB] overflow-auto rounded-md project-card-shadow">
           <a
             href="https://restaurant-reservation-application.vercel.app/dashboard"
@@ -72,41 +115,6 @@ export default function Projects(): JSX.Element {
               className="flex items-center font-bold"
             >
               <div>Live demo</div>
-              <ArrowTopRightOnSquareIcon className="ml-2 w-4 h-4" />
-            </Button>
-          </div>
-        </div>
-
-        {/* Project 2 */}
-        <div className="min-w-[fit-content] flex flex-col p-4 bg-white dark:bg-transparent dark:border dark:border-[#F9FAFB] overflow-auto rounded-md project-card-shadow">
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(event) => event.preventDefault()}
-            className="cursor-default"
-          >
-            {imageSrcMap.votingDapp
-              ? <img src={imageSrcMap.votingDapp} alt="Blockchain voting dApp project image" className="rounded-md" />
-              : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 dark:bg-transparent text-gray-400 dark:text-gray-300 animate-pulse">Loading</div>
-            }
-          </a>
-          <div className="mt-4 text-xl font-bold">Blockchain Voting dApp</div>
-          <div className="flex flex-wrap gap-2 mt-2 ">
-            {votingDAppSkills.map((skillMapping) => <Tag color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
-          </div>
-          <div className="mt-2 text-sm text-text-light dark:text-gray-300">Crafted a Solidity-based blockchain voting dApp, enabling secure and transparent voting processes through terminal commands, without a frontend GUI, leveraging Ethereum technology for decentralized decision-making.</div>
-          <div className="mt-2 text-sm font-bold">Gist ID for Remix:</div>
-          <div className="mb-2 text-sm">44065bd0829da53415ed96732502d3b2</div>
-          <div className="mt-2 pt-2 flex gap-2">
-            <Button
-              link="https://github.com/miki-saarna/blockchain-voting-dapp"
-              target="_blank"
-              rel="noopener noreferrer"
-              color="bg-gray-800 dark:bg-gray-700"
-              className="flex items-center font-bold"
-            >
-              <div>View source</div>
               <ArrowTopRightOnSquareIcon className="ml-2 w-4 h-4" />
             </Button>
           </div>
