@@ -39,7 +39,7 @@ export default function Projects(): JSX.Element {
         {/* Project 1 */}
         <div className="min-w-[fit-content] flex flex-col p-4 bg-white dark:bg-transparent dark:border dark:border-[#F9FAFB] overflow-auto rounded-md project-card-shadow">
           <a
-            href="https://blockchain-voting-dapp-it4d91zm2-miki-saarna.vercel.app/"
+            href="https://voting-dapp-ashy.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -67,7 +67,7 @@ export default function Projects(): JSX.Element {
               <ArrowTopRightOnSquareIcon className="ml-2 w-4 h-4" />
             </Button>
             <Button
-              link="https://blockchain-voting-dapp-it4d91zm2-miki-saarna.vercel.app/"
+              link="https://voting-dapp-ashy.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               color="bg-gray-800 dark:bg-gray-700"
