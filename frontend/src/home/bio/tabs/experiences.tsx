@@ -27,7 +27,7 @@ export default function Experiences(): JSX.Element {
           }
         </div>
         <div className="flex flex-col text-left">
-          <div className="text-xl font-bold">UI Developer</div>
+          <div className="text-xl font-bold">Frontend engineer</div>
           <div className="mt-1 text-text-light dark:text-gray-300">Advanced in-house Vue component library to elevate UI consistency and accessibility, contributing to the flagship product's launch and collaborative development, while enhancing backend with Golang for optimal functionality.</div>
           <div className="mt-2 text-base font-bold">Corvee</div>
           <div className="mt-1 text-sm text-text-light dark:text-gray-300">Jan 2023 - Feb 2024</div>
