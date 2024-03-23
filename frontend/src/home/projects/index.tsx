@@ -52,7 +52,7 @@ export default function Projects(): JSX.Element {
           <div className="flex flex-wrap gap-2 mt-2 ">
             {votingDAppSkills.map((skillMapping, idx) => <Tag key={idx} color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
           </div>
-          <div className="mt-2 text-sm text-text-light dark:text-gray-300">Crafted a Solidity-based blockchain voting dApp, enabling secure and transparent voting processes through terminal commands, without a frontend GUI, leveraging Ethereum technology for decentralized decision-making.</div>
+          <div className="mt-2 text-sm text-text-light dark:text-gray-300">Crafted a Solidity-based blockchain voting dApp with React and Tailwind frontend, enabling secure and transparent voting transactions through Ether.js, leveraging Ethereum technology for decentralization.</div>
           <div className="mt-2 text-sm font-bold">Gist ID for Remix:</div>
           <div className="mb-2 text-sm">44065bd0829da53415ed96732502d3b2</div>
           <div className="mt-2 pt-2 flex gap-2">

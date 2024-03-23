@@ -45,6 +45,7 @@ export default function Skills(): JSX.Element {
           <Tag color="bg-green-300">Flask</Tag>
           <Tag color="bg-green-300">Hardhat</Tag>
           <Tag color="bg-green-300">Foundry</Tag>
+          <Tag color="bg-green-300">ethers.js</Tag>
           <Tag color="bg-green-300">ElementUI</Tag>
           <Tag color="bg-green-300">Bootstrap</Tag>
           <Tag color="bg-green-300">Express</Tag>

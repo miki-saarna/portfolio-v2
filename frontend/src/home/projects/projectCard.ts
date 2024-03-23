@@ -18,7 +18,10 @@ export const restaurantReservationSkills: skillsList[] = [
 export const votingDAppSkills: skillsList[] = [
   { skill: 'Solidity', type: 'language' },
   { skill: 'TypeScript', type: 'language' },
-  { skill: 'Foundry', type: 'framework' }
+  { skill: 'Foundry', type: 'framework' },
+  { skill: 'React', type: 'framework' },
+  { skill: 'ethers.js', type: 'framework' },
+  { skill: 'Tailwind', type: 'framework' }
 ]
 export const sellingPartnerAPISkills: skillsList[] = [
   { skill: 'Python', type: 'language' },
