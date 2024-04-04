@@ -18,6 +18,7 @@ export default function Skills(): JSX.Element {
         </div>
         <div className="flex flex-wrap gap-2 mt-2">
           {/* <Tag color="bg-blue-300" className="floating-tag" style={genCustomAnimationStyle()}>JavaScript</Tag> */}
+          <Tag color="bg-blue-300">Go</Tag>
           <Tag color="bg-blue-300">JavaScript</Tag>
           <Tag color="bg-blue-300">TypeScript</Tag>
           <Tag color="bg-blue-300">Node</Tag>
@@ -58,7 +59,6 @@ export default function Skills(): JSX.Element {
           Dabbled
         </div>
         <div className="flex flex-wrap gap-2 mt-2">
-          <Tag color="bg-blue-300">Go</Tag>
           <Tag color="bg-blue-300">Rust</Tag>
           <Tag color="bg-blue-300">MongoDB</Tag>
           <Tag color="bg-green-300">Substrate</Tag>
