@@ -1,4 +1,5 @@
 import { JSX } from 'react';
+import './index.css'
 
 export default function HeroBanner(): JSX.Element {
   return (
@@ -21,7 +22,17 @@ export default function HeroBanner(): JSX.Element {
         </div>
 
         {/* 3: img */}
-        <img src={`images/mikito-saarna-portrait.png`} alt="Portrait of Mikito Saarna" className="mx-auto w-96" style={{ flex: 1 }} />
+        <img
+          src={`images/mikito-saarna-portrait.png`}
+          alt="Portrait of Mikito Saarna"
+          className="mx-auto w-96"
+          style={{ flex: 1 }}
+        />
+        <img
+          src={`images/pink-cloud.png`}
+          alt="Pinkish cloud background image"
+          className="absolute z-[-1] top-[200px] sm:top-[175px] lg:top-[50px] left-1/2 -translate-x-1/2 pulsating-cloud"
+        />
 
         {/* 2 */}
         <div className="hidden lg:block text-center text-lg" style={{ flex: 1 }}>
