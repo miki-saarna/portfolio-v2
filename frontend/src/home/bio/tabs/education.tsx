@@ -23,8 +23,8 @@ export default function Experiences(): JSX.Element {
       <div className="flex">
 
         <div className="min-w-8 mr-6">
-          {imageSrcMap.speedRunEth
-            ? <img src={imageSrcMap.speedRunEth} alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
+          {!imageSrcMap.speedRunEth
+            ? <img src="S3/logos/speed-run-eth-logo-tiny.png" alt="Speed Run Ethereum logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
@@ -43,8 +43,8 @@ export default function Experiences(): JSX.Element {
       <div className="flex pt-6">
 
         <div className="min-w-8 mr-6">
-          {imageSrcMap.thinkful
-            ? <img src={imageSrcMap.thinkful} alt="Thinkful logo" className="w-8 h-8 rounded-full" />
+          {!imageSrcMap.thinkful
+            ? <img src="S3/logos/thinkful-logo-tiny.png" alt="Thinkful logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>

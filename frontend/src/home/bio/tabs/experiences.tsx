@@ -21,8 +21,8 @@ export default function Experiences(): JSX.Element {
     <div className="flex flex-col space-y-6 divide-y mt-6 lg:mt-0 lg:ml-12">
       <div className="flex">
         <div className="min-w-8 mr-6">   
-          {imageSrcMap.corvee
-            ? <img src={imageSrcMap.corvee} alt="Corvee logo" className="w-8 h-8 rounded-full" />
+          {!imageSrcMap.corvee
+            ? <img src="S3/logos/corvee-logo-tiny.png" alt="Corvee logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
@@ -35,8 +35,8 @@ export default function Experiences(): JSX.Element {
       </div>
       <div className="flex pt-6">
         <div className="min-w-8 mr-6">
-          {imageSrcMap.corvee
-            ? <img src={imageSrcMap.corvee} alt="Corvee logo" className="w-8 h-8 rounded-full" />
+          {!imageSrcMap.corvee
+            ? <img src="S3/logos/corvee-logo-tiny.png" alt="Corvee logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
@@ -49,8 +49,8 @@ export default function Experiences(): JSX.Element {
       </div>
       <div className="flex pt-6">
         <div className="min-w-8 mr-6">   
-          {imageSrcMap.simplyByPapo
-            ? <img src={imageSrcMap.simplyByPapo} alt="Simply by Papo logo" className="w-8 h-8 rounded-full" />
+          {!imageSrcMap.simplyByPapo
+            ? <img src="S3/logos/papo-logo-tiny.png" alt="Simply by Papo logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>

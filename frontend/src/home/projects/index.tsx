@@ -43,8 +43,8 @@ export default function Projects(): JSX.Element {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {imageSrcMap.votingDapp
-              ? <img src={imageSrcMap.votingDapp} alt="Blockchain voting dApp dashboard" className="rounded-md" />
+            {!imageSrcMap.votingDapp
+              ? <img src="S3/projects/voting-dapp.png" alt="Blockchain voting dApp dashboard" className="rounded-md" />
               : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 dark:bg-transparent text-gray-400 dark:text-gray-300 animate-pulse">Loading</div>
             }
           </a>
@@ -86,8 +86,8 @@ export default function Projects(): JSX.Element {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {imageSrcMap.restaurantReservation
-              ? <img src={imageSrcMap.restaurantReservation} alt="Restaurant reservation app dashboard" className="rounded-md" />
+            {!imageSrcMap.restaurantReservation
+              ? <img src="S3/projects/restaurant-reservation-app.png" alt="Restaurant reservation app dashboard" className="rounded-md" />
               : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 dark:bg-transparent text-gray-400 dark:text-gray-300 animate-pulse">Loading</div>
             }
           </a>
@@ -129,8 +129,8 @@ export default function Projects(): JSX.Element {
             onClick={(event) => event.preventDefault()}
             className="cursor-default"
           >
-            {imageSrcMap.amazonSellingPartnerAPI
-              ? <img src={imageSrcMap.amazonSellingPartnerAPI} alt="Amazon Selling Partner API project image" className="rounded-md" />
+            {!imageSrcMap.amazonSellingPartnerAPI
+              ? <img src="S3/projects/amazon-selling-partner-api.png" alt="Amazon Selling Partner API project image" className="rounded-md" />
               : <div className="flex justify-center items-center h-40 rounded-md bg-gray-200 dark:bg-transparent text-gray-400 dark:text-gray-300 animate-pulse">Loading</div>
             }
           </a>

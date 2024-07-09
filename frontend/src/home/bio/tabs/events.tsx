@@ -25,8 +25,8 @@ export default function Events(): JSX.Element {
     <div className="flex flex-col space-y-6 divide-y mt-6 lg:mt-0 lg:ml-12">
       <div className="flex">
         <div className="min-w-8 mr-6">   
-          {imageSrcMap.ethDenver
-            ? <img src={imageSrcMap.ethDenver} alt="ETHDenver logo" className="w-8 h-8 rounded-full" />
+          {!imageSrcMap.ethDenver
+            ? <img src="S3/logos/ethdenver-logo-tiny.png" alt="ETHDenver logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
@@ -39,8 +39,8 @@ export default function Events(): JSX.Element {
       </div>
       <div className="flex pt-6">
         <div className="min-w-8 mr-6">   
-          {imageSrcMap.codehawks
-            ? <img src={imageSrcMap.codehawks} alt="Codehawks logo" className="w-8 h-8 rounded-full" />
+          {!imageSrcMap.codehawks
+            ? <img src="S3/logos/codehawks-logo-tiny.png" alt="Codehawks logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
@@ -53,8 +53,8 @@ export default function Events(): JSX.Element {
       </div>
       <div className="flex pt-6">
         <div className="min-w-8 mr-6">   
-          {imageSrcMap.vue
-            ? <img src={imageSrcMap.vue} alt="Vue logo" className="w-8 h-8 rounded-full" />
+          {!imageSrcMap.vue
+            ? <img src="S3/logos/vue-logo-tiny.png" alt="Vue logo" className="w-8 h-8 rounded-full" />
             : <div className="h-8 min-w-8 rounded-full bg-gray-200 animate-pulse" />
           }
         </div>
