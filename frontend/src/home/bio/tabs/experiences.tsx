@@ -6,16 +6,16 @@ export default function Experiences(): JSX.Element {
 
   const { imageSrcMap, setImageSrc } = useImages();
 
-  useEffect(() => {
-    if (!imageSrcMap.corvee) {
-      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'corvee-logo-tiny.png'}`;
-      GetImageFromS3('corvee', url, setImageSrc);
-    }
-    if (!imageSrcMap.simplyByPapo) {
-      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'papo-logo-tiny.png'}`;
-      GetImageFromS3('simplyByPapo', url, setImageSrc);
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (!imageSrcMap.corvee) {
+  //     const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'corvee-logo-tiny.png'}`;
+  //     GetImageFromS3('corvee', url, setImageSrc);
+  //   }
+  //   if (!imageSrcMap.simplyByPapo) {
+  //     const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'papo-logo-tiny.png'}`;
+  //     GetImageFromS3('simplyByPapo', url, setImageSrc);
+  //   }
+  // }, [])
 
   return (
     <div className="flex flex-col space-y-6 divide-y mt-6 lg:mt-0 lg:ml-12">

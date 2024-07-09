@@ -16,20 +16,20 @@ export default function Projects(): JSX.Element {
 
   const { imageSrcMap, setImageSrc } = useImages();
 
-  useEffect(() => {
-    if (!imageSrcMap.restaurantReservation) {
-      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/projects/${'restaurant-reservation-app.png'}`;
-      GetImageFromS3('restaurantReservation', url, setImageSrc);
-    }
-    if (!imageSrcMap.votingDapp) {
-      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/projects/${'voting-dapp.png'}`;
-      GetImageFromS3('votingDapp', url, setImageSrc);
-    }
-    if (!imageSrcMap.amazonSellingPartnerAPI) {
-      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/projects/${'amazon-selling-partner-api.png'}`;
-      GetImageFromS3('amazonSellingPartnerAPI', url, setImageSrc);
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (!imageSrcMap.restaurantReservation) {
+  //     const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/projects/${'restaurant-reservation-app.png'}`;
+  //     GetImageFromS3('restaurantReservation', url, setImageSrc);
+  //   }
+  //   if (!imageSrcMap.votingDapp) {
+  //     const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/projects/${'voting-dapp.png'}`;
+  //     GetImageFromS3('votingDapp', url, setImageSrc);
+  //   }
+  //   if (!imageSrcMap.amazonSellingPartnerAPI) {
+  //     const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/projects/${'amazon-selling-partner-api.png'}`;
+  //     GetImageFromS3('amazonSellingPartnerAPI', url, setImageSrc);
+  //   }
+  // }, [])
 
   return (
     <div className="max-w-2xl lg:max-w-6xl mx-auto flex flex-col py-16 px-6 lg:px-12">

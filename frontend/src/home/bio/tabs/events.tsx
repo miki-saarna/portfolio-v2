@@ -6,20 +6,20 @@ export default function Events(): JSX.Element {
 
   const { imageSrcMap, setImageSrc } = useImages();
 
-  useEffect(() => {
-    if (!imageSrcMap.ethDenver) {
-      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'ethdenver-logo-tiny.png'}`;
-      GetImageFromS3('ethDenver', url, setImageSrc);
-    }
-    if (!imageSrcMap.codehawks) {
-      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'codehawks-logo-tiny.png'}`;
-      GetImageFromS3('codehawks', url, setImageSrc);
-    }
-    if (!imageSrcMap.vue) {
-      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'vue-logo-tiny.png'}`;
-      GetImageFromS3('vue', url, setImageSrc);
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (!imageSrcMap.ethDenver) {
+  //     const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'ethdenver-logo-tiny.png'}`;
+  //     GetImageFromS3('ethDenver', url, setImageSrc);
+  //   }
+  //   if (!imageSrcMap.codehawks) {
+  //     const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'codehawks-logo-tiny.png'}`;
+  //     GetImageFromS3('codehawks', url, setImageSrc);
+  //   }
+  //   if (!imageSrcMap.vue) {
+  //     const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'vue-logo-tiny.png'}`;
+  //     GetImageFromS3('vue', url, setImageSrc);
+  //   }
+  // }, [])
 
   return (
     <div className="flex flex-col space-y-6 divide-y mt-6 lg:mt-0 lg:ml-12">

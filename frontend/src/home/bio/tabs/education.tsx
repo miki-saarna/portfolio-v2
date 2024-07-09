@@ -7,16 +7,16 @@ export default function Experiences(): JSX.Element {
 
   const { imageSrcMap, setImageSrc } = useImages();
 
-  useEffect(() => {
-    if (!imageSrcMap.speedRunEth) {
-      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'speed-run-eth-logo-tiny.png'}`;
-      GetImageFromS3('speedRunEth', url, setImageSrc);
-    }
-    if (!imageSrcMap.thinkful) {
-      const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'thinkful-logo-tiny.png'}`;
-      GetImageFromS3('thinkful', url, setImageSrc);
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (!imageSrcMap.speedRunEth) {
+  //     const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'speed-run-eth-logo-tiny.png'}`;
+  //     GetImageFromS3('speedRunEth', url, setImageSrc);
+  //   }
+  //   if (!imageSrcMap.thinkful) {
+  //     const url = `${process.env.REACT_APP_API_URL}/get-image-url/${'mikito-saarna-portfolio'}/logos/${'thinkful-logo-tiny.png'}`;
+  //     GetImageFromS3('thinkful', url, setImageSrc);
+  //   }
+  // }, [])
 
   return (
     <div className="flex flex-col space-y-6 divide-y mt-6 lg:mt-0 lg:ml-12">
