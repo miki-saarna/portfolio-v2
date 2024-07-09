@@ -139,9 +139,9 @@ export default function Projects(): JSX.Element {
             {sellingPartnerAPISkills.map((skillMapping, idx) => <Tag key={idx} color={getColorFromSkillType(skillMapping.type)}>{skillMapping.skill}</Tag>)}
           </div>
           <div className="my-2 text-sm text-text-light dark:text-gray-300">Engineered a comprehensive backend repository for automating Amazon Seller operations using Python and various APIs (Amazon Selling Partner, Gmail, Google Drive), featuring systems for dynamic inventory management, automated commission reporting, and accurate product listing via Excel VBA and AI algorithms.</div>
-          <div className="hidden mt-auto flex gap-2">
+          <div className="mt-auto flex gap-2">
             <Button
-              link=""
+              link="https://github.com/miki-saarna/amazon-seller-api"
               target="_blank"
               rel="noopener noreferrer"
               color="bg-gray-800 dark:bg-gray-700"
